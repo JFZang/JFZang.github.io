@@ -26,6 +26,8 @@ Every Macro Views article should pass these checks before publication.
 - Check that each opinion follows from the evidence presented above it.
 - Give every `My view` at least one explicit reason. When the view moves from macro data to a company, sector or market implication, explain that intermediate link rather than asking the reader to supply it.
 - Where uncertainty is material, say what observable development would strengthen, weaken or overturn the view.
+- Compare each draft with at least the previous two issues. Check for repeated forecasts, statistics, source links, opening arguments and watch-list items—not only verbatim duplicate wording.
+- A continuing theme should move forward: state what is new, whether it confirms or weakens the previous view, and why the interpretation has changed. Do not reuse an unchanged forecast as the next issue's lead simply because no new forecast has been published.
 - State uncertainty, alternative outcomes and what would change the view.
 - Check every external link and internal page link.
 - Review spelling, dates, units and consistency between the homepage summary and article.

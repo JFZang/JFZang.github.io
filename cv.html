@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jiefu Zhang's education, experience and technical skills." />
+  <title>CV | Jiefu Zhang</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand brand-link" href="index.html">Jiefu Zhang</a>
+      <div class="nav-links">
+        <a href="index.html#stock-research">Stock Research</a>
+        <a href="index.html#industry-research">Industry Research</a>
+        <a href="macro/index.html">Macro Views</a>
+        <a href="index.html">Home</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="cv-page-hero">
+    <div class="container cv-page-heading">
+      <div>
+        <p class="eyebrow">Background &amp; experience</p>
+        <h1>Curriculum Vitae</h1>
+      </div>
+      <a class="button-link button-link-light" href="assets/documents/Jiefu-Zhang-CV.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+    </div>
+  </header>
+
+  <main class="cv-page-main">
+    <div class="container">
+      <div id="cv-content" class="cv-markdown" aria-live="polite">
+        <p>Loading CV…</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function escapeHtml(text) {
+      return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function inlineMarkdown(text) {
+      return escapeHtml(text)
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/`(.*?)`/g, '<code>$1</code>');
+    }
+
+    function renderMarkdown(markdown) {
+      const lines = markdown.replace(/\r/g, '').split('\n');
+      const html = [];
+      let inList = false;
+      let paragraph = [];
+      const flushParagraph = () => {
+        if (paragraph.length) {
+          html.push(`<p>${inlineMarkdown(paragraph.join(' '))}</p>`);
+          paragraph = [];
+        }
+      };
+      const closeList = () => {
+        if (inList) { html.push('</ul>'); inList = false; }
+      };
+
+      for (const rawLine of lines) {
+        const line = rawLine.trim();
+        if (!line) { flushParagraph(); closeList(); continue; }
+        if (line.startsWith('### ')) {
+          flushParagraph(); closeList();
+          const parts = line.slice(4).split('||').map((part) => part.trim());
+          html.push(parts.length === 2
+            ? `<div class="cv-entry-heading"><h5>${inlineMarkdown(parts[0])}</h5><span class="cv-entry-date">${inlineMarkdown(parts[1])}</span></div>`
+            : `<h5>${inlineMarkdown(parts[0])}</h5>`);
+          continue;
+        }
+        if (line.startsWith('## ')) { flushParagraph(); closeList(); html.push(`<h4>${inlineMarkdown(line.slice(3))}</h4>`); continue; }
+        if (line.startsWith('# ')) { flushParagraph(); closeList(); html.push(`<h3>${inlineMarkdown(line.slice(2))}</h3>`); continue; }
+        if (line.startsWith('- ')) {
+          flushParagraph();
+          if (!inList) { html.push('<ul>'); inList = true; }
+          html.push(`<li>${inlineMarkdown(line.slice(2))}</li>`);
+          continue;
+        }
+        closeList(); paragraph.push(line);
+      }
+      flushParagraph(); closeList();
+      return html.join('');
+    }
+
+    fetch('content/cv/CV.md')
+      .then((response) => {
+        if (!response.ok) throw new Error('Unable to load CV');
+        return response.text();
+      })
+      .then((markdown) => {
+        document.getElementById('cv-content').innerHTML = renderMarkdown(markdown);
+      })
+      .catch(() => {
+        document.getElementById('cv-content').innerHTML = '<p>The online CV is temporarily unavailable. Please use the PDF download above.</p>';
+      });
+  </script>
+</body>
+</html>
