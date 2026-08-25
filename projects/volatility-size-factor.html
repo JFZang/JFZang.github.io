@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A financial-econometrics project examining whether firm size is related to individual-stock volatility dynamics using GARCH-in-Mean models." />
+  <title>Firm Size and Stock Volatility Dynamics | Jiefu Zhang</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand brand-link" href="../index.html">Jiefu Zhang</a>
+      <div class="nav-links">
+        <a href="../index.html#stock-research">Stock Research</a>
+        <a href="../index.html#industry-research">Industry Research</a>
+        <a href="../index.html#macro">Macro Views</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <div class="article-container">
+      <p class="eyebrow">Financial econometrics · Volatility modelling</p>
+      <h1>Firm Size and Stock Volatility Dynamics</h1>
+      <p class="article-deck">
+        An empirical study of whether market capitalisation is associated with the way individual
+        stocks respond to volatility shocks and how long those shocks persist.
+      </p>
+      <div class="article-meta">
+        <span>40 NYSE stocks</span>
+        <span>Monthly data: Dec 2002–Feb 2023</span>
+        <span>By Jiefu Zhang</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <article class="article-container macro-article">
+      <aside class="key-takeaway">
+        <p class="card-label">The result in one view</p>
+        <p>
+          The stock-level models show clear volatility clustering and persistence. However, ordered
+          trend tests do not support a statistically significant monotonic relationship between firm
+          size and the estimated GARCH parameters.
+        </p>
+      </aside>
+
+      <section class="article-section">
+        <p class="section-kicker">Research question</p>
+        <h2>Does company size shape volatility dynamics?</h2>
+        <p>
+          Smaller companies are often described as riskier than larger companies, but higher average
+          volatility does not necessarily imply that their volatility responds differently to new
+          information or remains elevated for longer. This project separates those ideas by asking
+          whether the parameters governing conditional volatility vary systematically with market
+          capitalisation.
+        </p>
+        <p>
+          This is a firm-characteristics study rather than a direct test of the Fama–French SMB factor.
+          The unit of analysis is the individual stock, and size enters through market-capitalisation
+          rankings rather than a small-minus-big factor return series.
+        </p>
+      </section>
+
+      <section class="article-section country-section">
+        <p class="section-kicker">Data and design</p>
+        <h2>Twenty years of monthly stock returns</h2>
+        <p>
+          The sample contains 40 randomly selected NYSE-listed companies with uninterrupted CRSP data
+          from December 2002 to February 2023. Prices are adjusted for corporate actions and combined
+          with shares outstanding to calculate market capitalisation. Each month, the firms are ranked
+          into four equally sized groups, from the smallest ten companies to the largest ten.
+        </p>
+        <p>
+          The tier assignments are relatively stable: they change in 112 of 9,680 firm-month
+          observations, compared with much more frequent movement in exact rankings. The dissertation
+          therefore uses the four size tiers for its main comparisons and exact end-of-sample ranks as
+          a sensitivity check.
+        </p>
+      </section>
+
+      <section class="article-section country-section">
+        <p class="section-kicker">Empirical model</p>
+        <h2>Estimating return and conditional-variance dynamics</h2>
+        <p>
+          A stock-specific subset AR(2)-GARCH-in-Mean model is estimated for each company. The mean
+          equation uses a sparse lag structure that retains the second monthly return lag alongside
+          conditional variance. The variance equation separates the immediate response to a shock from
+          the influence of past variance.
+        </p>
+        <div class="model-equation" role="img" aria-label="Return and conditional variance equations">
+          <p><i>r</i><sub>t</sub> = γ<sub>0</sub> + δ<i>r</i><sub>t−2</sub> + <i>cσ</i><sub>t</sub><sup>2</sup> + <i>a</i><sub>t</sub></p>
+          <p><i>a</i><sub>t</sub> = <i>σ</i><sub>t</sub><i>ε</i><sub>t</sub></p>
+          <p><i>σ</i><sub>t</sub><sup>2</sup> = α<sub>0</sub> + α<sub>1</sub><i>a</i><sub>t−1</sub><sup>2</sup> + β<sub>1</sub><i>σ</i><sub>t−1</sub><sup>2</sup></p>
+        </div>
+        <p>
+          Here, α<sub>1</sub> captures sensitivity to recent squared innovations, while the combined
+          α<sub>1</sub> + β<sub>1</sub> term is the more informative measure of volatility persistence.
+          The coefficient <i>c</i> measures the loading of expected return on conditional variance; it
+          should not be read as the total risk premium without also considering the level of variance.
+        </p>
+      </section>
+
+      <section class="article-section country-section">
+        <p class="section-kicker">Results</p>
+        <h2>Strong volatility dynamics, weak evidence of a size gradient</h2>
+        <div class="watch-grid project-results">
+          <div>
+            <strong>Descriptive pattern</strong>
+            <p>Smaller firms have higher average returns and return standard deviations in the sample.</p>
+          </div>
+          <div>
+            <strong>Volatility clustering</strong>
+            <p>Most stock-level shock-response and persistence estimates are statistically significant.</p>
+          </div>
+          <div>
+            <strong>Ordered trend tests</strong>
+            <p>The p-values are 0.3041 for α<sub>1</sub> and 0.2451 for β<sub>1</sub>, so neither size trend is significant.</p>
+          </div>
+          <div>
+            <strong>Rank sensitivity check</strong>
+            <p>Using exact end-of-sample ranks, the lowest reported p-value is 0.1738 for β<sub>1</sub>.</p>
+          </div>
+        </div>
+        <div class="view-box">
+          <p class="card-label">Interpretation</p>
+          <p>
+            The analysis finds evidence that volatility is persistent, but not that persistence changes
+            monotonically with firm size. This is a failure to reject the no-trend hypothesis, not proof
+            that size and volatility dynamics are unrelated in the wider market.
+          </p>
+        </div>
+      </section>
+
+      <section class="article-section country-section">
+        <p class="section-kicker">Extensions &amp; robustness</p>
+        <h2>How I would extend the study</h2>
+        <p>
+          The dissertation provides a baseline test of the relationship between firm size and volatility
+          dynamics. A second version would examine whether its central finding remains stable under four
+          extensions to the data, model and inference.
+        </p>
+
+        <div class="audit-list">
+          <article class="audit-item">
+            <p class="audit-number">01 · Dynamic size measurement</p>
+            <h3>Align size and volatility through time</h3>
+            <p>
+              <strong>Original choice.</strong> Each stock receives one set of GARCH parameters estimated
+              from its full 2002–2023 return history, while the main comparisons use its February 2023
+              size tier. Broad tiers changed in only 112 of 9,680 firm-month intervals, making a stable
+              classification appear reasonable.
+            </p>
+            <p>
+              <strong>Extension.</strong> A company may move between size categories during the estimation
+              period. Matching rolling parameter estimates to contemporaneous or lagged size would capture
+              that evolution more precisely than a single end-of-sample classification.
+            </p>
+            <p>
+              <strong>Approach.</strong> Match rolling parameter estimates to lagged market capitalisation,
+              rebalance size groups annually, or use a panel specification in which size changes through
+              time.
+            </p>
+          </article>
+
+          <article class="audit-item">
+            <p class="audit-number">02 · Sample breadth</p>
+            <h3>Broaden the cross-section</h3>
+            <p>
+              <strong>Original choice.</strong> Forty companies with uninterrupted monthly data produce a
+              balanced and directly comparable panel across the full sample period.
+            </p>
+            <p>
+              <strong>Extension.</strong> This design focuses the result on established firms with continuous
+              histories. A larger universe that also accommodates market entry and exit would broaden the
+              result's relevance and increase the power of comparisons across size groups.
+            </p>
+            <p>
+              <strong>Approach.</strong> Draw from a broader CRSP universe, document the sampling and inclusion
+              rules, and expand the cross-section before forming size groups.
+            </p>
+          </article>
+
+          <article class="audit-item">
+            <p class="audit-number">03 · Model robustness</p>
+            <h3>Test asymmetry and heavy tails</h3>
+            <p>
+              <strong>Original choice.</strong> A Gaussian GARCH(1,1) keeps estimation and cross-company
+              comparison tractable. It is also a widely used benchmark for volatility persistence.
+            </p>
+            <p>
+              <strong>Extension.</strong> Equity returns can have heavy tails, and negative shocks may affect
+              volatility more strongly than positive shocks. Alternative specifications provide a useful
+              test of whether the estimated size pattern depends on the benchmark model.
+            </p>
+            <p>
+              <strong>Approach.</strong> Re-estimate with Student-t innovations and asymmetric
+              GJR-GARCH or EGARCH specifications, then test whether any size conclusion survives across
+              models.
+            </p>
+          </article>
+
+          <article class="audit-item">
+            <p class="audit-number">04 · Inference</p>
+            <h3>Carry parameter uncertainty into the second stage</h3>
+            <p>
+              <strong>Original choice.</strong> The Jonckheere–Terpstra test accommodates ordered size tiers,
+              tied ranks and unknown parameter distributions without imposing a linear relationship.
+            </p>
+            <p>
+              <strong>Extension.</strong> The stock-level inputs are estimated with different levels of
+              precision, while common market and sector shocks can affect several companies at once.
+              Incorporating those features would make the cross-sectional evidence more informative.
+            </p>
+            <p>
+              <strong>Approach.</strong> Propagate first-stage uncertainty with a bootstrap or joint
+              hierarchical model, add market and industry controls, and pre-specify a smaller set of primary
+              parameters with an appropriate multiple-testing adjustment.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="article-section sources-section">
+        <h2>Project note</h2>
+        <p>
+          This page revisits a financial-econometrics project completed in 2023, focusing on its findings,
+          methodology and directions for further research.
+        </p>
+      </section>
+
+      <a class="back-link" href="../index.html#projects">← Back to Academic &amp; Empirical Projects</a>
+    </article>
+  </main>
+</body>
+</html>

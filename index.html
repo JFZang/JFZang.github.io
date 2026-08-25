@@ -6,6 +6,7 @@
   <meta name="description" content="Jiefu Zhang's research on companies, markets, valuation and applied economics." />
   <title>Jiefu Zhang | Investment Research</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/research-report.css" />
 </head>
 <body>
   <nav class="nav" aria-label="Main navigation">
@@ -15,6 +16,7 @@
         <a href="#stock-research">Stock Research</a>
         <a href="#industry-research">Industry Research</a>
         <a href="#macro">Macro Views</a>
+        <a href="#glossary">Glossary</a>
         <a href="#projects">Projects</a>
         <a href="assets/documents/Jiefu-Zhang-CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
         <a href="#contact">Contact</a>
@@ -60,7 +62,7 @@
           </p>
           <p>
             I now use this site to develop that interest through company research, macro writing and
-            empirical projects. My interests sit across company analysis, industry structure, macro
+            empirical projects. My interests sit across equity research, industry structure, macro
             conditions and empirical research, with valuation and risk as the connecting themes.
           </p>
         </div>
@@ -109,7 +111,18 @@
               <li>Valuation</li>
               <li>Risks &amp; catalysts</li>
             </ul>
-            <p class="research-status"><span>Current status</span> Company write-ups will be published here.</p>
+            <article class="research-feature-card">
+              <p class="card-label">Zeta Global · NYSE: ZETA · August 2026</p>
+              <h4>Strong momentum, demanding per-share economics</h4>
+              <p>
+                A valuation-led thesis testing whether revenue growth converts into gross profit and
+                SBC-adjusted cash flow per share. Rating: Neutral / Wait; risk-adjusted value: $26.
+              </p>
+              <div class="research-feature-meta">
+                <span>Reverse DCF</span><span>3-scenario model</span><span>12–18 month horizon</span>
+              </div>
+              <a class="text-link" href="projects/zeta-global-stock-thesis.html">Read the stock thesis →</a>
+            </article>
           </div>
         </div>
       </div>
@@ -133,7 +146,18 @@
               <li>Industry economics</li>
               <li>Long-term drivers</li>
             </ul>
-            <p class="research-status"><span>Current status</span> Sector notes will be published here.</p>
+            <article class="research-feature-card">
+              <p class="card-label">Marketing technology · August 2026</p>
+              <h4>Enterprise Marketing Data and Activation Platforms</h4>
+              <p>
+                How software, identity data and media execution divide the profit pool—and why gross
+                profit is more comparable than revenue across the stack.
+              </p>
+              <div class="research-feature-meta">
+                <span>Value chain</span><span>Peer economics</span><span>Privacy &amp; AI</span>
+              </div>
+              <a class="text-link" href="projects/enterprise-marketing-data-platforms.html">Read the industry report →</a>
+            </article>
           </div>
         </div>
       </div>
@@ -172,46 +196,164 @@
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section glossary-section" id="glossary">
       <div class="container">
-        <p class="section-kicker">Academic &amp; side projects</p>
-        <h3>Questions explored with data</h3>
+        <div class="glossary-heading">
+          <div>
+            <p class="section-kicker">Working vocabulary</p>
+            <h3>Glossary</h3>
+          </div>
+          <p class="glossary-intro">
+            A growing collection of useful terms I come across in research and reading—kept in
+            plain English, with a short note on how I interpret each one.
+          </p>
+        </div>
+
+        <details class="glossary-disclosure">
+          <summary>
+            <span>Browse glossary</span>
+            <span class="glossary-count">4 terms</span>
+          </summary>
+          <div class="glossary-content">
+        <div class="glossary-search">
+          <label for="glossary-search-input">Search by abbreviation or full term</label>
+          <input
+            id="glossary-search-input"
+            type="search"
+            placeholder="Try N, NR, NRR…"
+            autocomplete="off"
+            aria-controls="glossary-suggestions glossary-list"
+          />
+          <div class="glossary-suggestions" id="glossary-suggestions" aria-live="polite"></div>
+        </div>
+
+        <dl class="glossary-list" id="glossary-list">
+          <div class="glossary-entry" data-term="Earn-out" data-expansion="Contingent acquisition payment">
+            <dt>Earn-out <span class="glossary-term-expansion">Contingent acquisition payment</span></dt>
+            <dd>
+              <span class="glossary-label">Simple explanation</span>
+              <p>A portion of an acquisition price that is paid only if the acquired business meets agreed post-deal targets, such as revenue, EBITDA, customer retention or product milestones.</p>
+              <span class="glossary-label">Earn-out vs contingent consideration</span>
+              <p>An earn-out is generally a type of contingent consideration tied to the acquired business's future performance. Contingent consideration is the broader accounting term and can include acquisition payments triggered by other future events or conditions.</p>
+              <span class="glossary-label">Why it matters</span>
+              <p>Earn-outs can bridge a valuation gap between buyer and seller and reduce the buyer's upfront risk, but they may also encourage short-term target optimisation or create post-deal disputes. For accounting analysis, liability-classified contingent consideration is generally remeasured after acquisition, with fair-value changes affecting earnings; equity-classified amounts are generally not remeasured.</p>
+              <span class="glossary-label">Interpretation</span>
+              <p>Check the performance metric, threshold, measurement period, maximum payout and accounting classification. Payments linked to a seller's continued employment may be treated as compensation expense rather than purchase consideration, which changes both the acquisition accounting and post-deal earnings profile.</p>
+              <span class="glossary-label">Analytical treatment</span>
+              <p>Exclude fair-value remeasurement gains or losses on contingent consideration from normalised operating earnings because they do not represent the underlying operating performance of the current period.</p>
+              <ul class="glossary-points">
+                <li>Do not ignore the contingent consideration itself.</li>
+                <li>Retain expected cash payments as acquisition cost, a liability or a future cash outflow, as appropriate.</li>
+                <li>Reflect expected share issuance in potential dilution.</li>
+              </ul>
+              <blockquote class="glossary-principle">Exclude accounting remeasurement volatility from operating profit, but retain the real economic cost in enterprise value, cash-flow and dilution analysis.</blockquote>
+            </dd>
+          </div>
+          <div class="glossary-entry" data-term="NRR" data-expansion="Net Revenue Retention">
+            <dt>NRR <span class="glossary-term-expansion">Net Revenue Retention</span></dt>
+            <dd>
+              <span class="glossary-label">Simple explanation</span>
+              <p>The percentage of recurring revenue retained from an existing customer cohort after expansion, contraction and churn, excluding revenue from new customers.</p>
+              <span class="glossary-label">Formula</span>
+              <div class="glossary-formula" role="math" aria-label="Net revenue retention equals starting recurring revenue plus expansion revenue minus contraction revenue minus churned revenue, divided by starting recurring revenue, multiplied by 100 percent">
+                <span class="formula-name">NRR</span>
+                <span aria-hidden="true">=</span>
+                <span class="formula-fraction">
+                  <span>Starting recurring revenue + Expansion − Contraction − Churn</span>
+                  <span>Starting recurring revenue</span>
+                </span>
+                <span aria-hidden="true">× 100%</span>
+              </div>
+              <span class="glossary-label">Why SaaS uses it</span>
+              <p>NRR is most commonly used for SaaS and other subscription businesses because their growth depends not only on acquiring new customers, but also on retaining and expanding recurring revenue from existing customers. By excluding new customers, NRR isolates whether the existing customer base is growing on its own through renewals, price increases and cross-selling. It is less meaningful for transactional or project-based businesses where customer spending is irregular and non-recurring.</p>
+              <span class="glossary-label">Interpretation</span>
+              <p>NRR above 100% means expansion from retained customers more than offsets lost or reduced business. It is a useful indicator of product value, customer stickiness and the efficiency of growth, but the cohort definition and calculation period should be checked before comparing companies.</p>
+            </dd>
+          </div>
+          <div class="glossary-entry" data-term="PPA" data-expansion="Purchase Price Allocation">
+            <dt>PPA <span class="glossary-term-expansion">Purchase Price Allocation</span></dt>
+            <dd>
+              <span class="glossary-label">Simple explanation</span>
+              <p>The accounting process used after an acquisition to allocate the purchase price across the identifiable assets acquired and liabilities assumed at fair value. Any residual amount is generally recorded as goodwill.</p>
+              <span class="glossary-label">Simplified formula</span>
+              <div class="glossary-formula glossary-formula-text" role="math" aria-label="Purchase price approximately equals the fair value of identifiable net assets plus goodwill">
+                <span class="formula-name">Purchase price</span>
+                <span aria-hidden="true">≈</span>
+                <span>Fair value of identifiable net assets + Goodwill</span>
+              </div>
+              <span class="glossary-label">Why it matters</span>
+              <p>PPA determines how an acquisition affects reported earnings after the deal closes. Allocating more value to finite-lived intangible assets—such as customer relationships, technology or brands—creates future amortisation expense, while allocating more to goodwill avoids scheduled amortisation but may increase later impairment risk.</p>
+              <span class="glossary-label">Interpretation</span>
+              <p>Investors should examine PPA when comparing reported and adjusted earnings, assessing whether an acquisition is genuinely accretive, and judging the quality of management's deal accounting. Large goodwill balances, short assumed asset lives or repeated exclusions of acquisition-related amortisation can materially change the apparent profitability and return on invested capital of an acquisitive company.</p>
+            </dd>
+          </div>
+          <div class="glossary-entry" data-term="RPO" data-expansion="Remaining Performance Obligations">
+            <dt>RPO <span class="glossary-term-expansion">Remaining Performance Obligations</span></dt>
+            <dd>
+              <span class="glossary-label">Simple explanation</span>
+              <p>The contracted revenue a company expects to recognise in the future for goods or services it has not yet delivered. It generally combines deferred revenue with contracted amounts not yet invoiced.</p>
+              <span class="glossary-label">Simplified formula</span>
+              <div class="glossary-formula glossary-formula-text" role="math" aria-label="Remaining performance obligations approximately equal deferred revenue plus contracted amounts not yet billed">
+                <span class="formula-name">RPO</span>
+                <span aria-hidden="true">≈</span>
+                <span>Deferred revenue + Contracted amounts not yet billed</span>
+              </div>
+              <span class="glossary-label">RPO vs AR</span>
+              <p>Accounts receivable (AR) represents revenue already recognised and invoiced, but not yet collected in cash. RPO represents contracted revenue that has not yet been recognised because the remaining performance obligations have not been fulfilled.</p>
+              <span class="glossary-label">Interpretation</span>
+              <p>RPO is most useful for assessing forward revenue visibility, backlog quality and changes in customer commitment—especially in subscription and long-term contract businesses. Current RPO, expected to be recognised within 12 months, is usually more relevant to near-term growth. RPO is not automatically a revenue forecast: timing, cancellations, contract duration, acquisitions and billing structure can all affect it.</p>
+            </dd>
+          </div>
+        </dl>
+        <p class="glossary-empty" id="glossary-empty" hidden>No matching glossary entries.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section alt" id="projects">
+      <div class="container">
+        <p class="section-kicker">Academic &amp; empirical projects</p>
+        <h3>Selected empirical and policy research</h3>
         <p class="section-intro">
-          Longer-form work where I use economic reasoning and empirical methods to investigate
-          policy and financial-market questions.
+          Projects applying financial econometrics and public-economics frameworks to market and
+          policy questions.
         </p>
 
         <div class="project-grid">
           <article class="project-card">
             <div class="project-number">01</div>
-            <p class="card-label">Undergraduate research · Public policy</p>
-            <h4>The Impact of a Sugar Levy</h4>
+            <p class="card-label">Financial econometrics · Volatility modelling</p>
+            <h4>Firm Size and Stock Volatility Dynamics</h4>
             <p>
-              An undergraduate empirical study examining how a sugar levy affects economic or
-              consumer outcomes and how that policy effect can be identified from data.
+              Tests whether market capitalisation is systematically related to individual stocks'
+              volatility persistence and sensitivity to shocks. Across 40 NYSE stocks, the models
+              confirm clustering and persistence but find no significant monotonic size pattern.
             </p>
             <ul class="tag-list" aria-label="Methods used">
-              <li>Policy evaluation</li>
-              <li>Applied econometrics</li>
-              <li>Data analysis</li>
+              <li>Subset AR(2)</li>
+              <li>GARCH-in-Mean</li>
+              <li>Volatility dynamics</li>
+              <li>Rank tests</li>
             </ul>
-            <p class="project-note">Full paper and supporting materials forthcoming.</p>
+            <p class="project-note">40 NYSE stocks · Monthly data, Dec 2002–Feb 2023</p>
+            <a class="text-link project-link" href="projects/volatility-size-factor.html">Read project →</a>
           </article>
 
           <article class="project-card">
             <div class="project-number">02</div>
-            <p class="card-label">MPhil dissertation · Financial econometrics</p>
-            <h4>Volatility and the Size Factor</h4>
+            <p class="card-label">Public economics · Policy analysis</p>
+            <h4>Tax Design and the UK Soft Drinks Industry Levy</h4>
             <p>
-              A GARCH-in-Mean study of the relationship between conditional volatility and the size
-              factor, linking time-varying risk with cross-sectional patterns in equity returns.
+              Applies optimal-tax and Pigouvian frameworks to examine how tiered rates trade off
+              revenue efficiency, external-cost correction, producer incentives and household incidence.
             </p>
             <ul class="tag-list" aria-label="Methods used">
-              <li>GARCH-in-Mean</li>
-              <li>Time-series econometrics</li>
-              <li>Factor returns</li>
+              <li>Public economics</li>
+              <li>Welfare analysis</li>
+              <li>Tax incidence</li>
             </ul>
-            <p class="project-note">Dissertation, code and results forthcoming.</p>
+            <a class="text-link project-link" href="projects/uk-soft-drinks-industry-levy.html">Read project →</a>
           </article>
         </div>
       </div>
@@ -231,5 +373,52 @@
       </div>
     </div>
   </footer>
+  <script>
+    (() => {
+      const glossary = document.querySelector('#glossary');
+      const main = document.querySelector('main');
+
+      if (glossary && main) main.append(glossary);
+
+      const input = document.querySelector('#glossary-search-input');
+      const entries = [...document.querySelectorAll('.glossary-entry')];
+      const suggestions = document.querySelector('#glossary-suggestions');
+      const empty = document.querySelector('#glossary-empty');
+
+      if (!input || !entries.length || !suggestions || !empty) return;
+
+      const update = () => {
+        const query = input.value.trim().toLowerCase();
+        const matches = entries.filter((entry) => {
+          const term = entry.dataset.term.toLowerCase();
+          const expansion = entry.dataset.expansion.toLowerCase();
+          const matchesQuery = !query || term.startsWith(query) || expansion.includes(query);
+          entry.hidden = !matchesQuery;
+          return matchesQuery;
+        });
+
+        empty.hidden = matches.length > 0;
+        suggestions.replaceChildren();
+
+        if (!query) return;
+
+        matches.forEach((entry) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'glossary-suggestion';
+          button.textContent = `${entry.dataset.term} — ${entry.dataset.expansion}`;
+          button.addEventListener('click', () => {
+            input.value = entry.dataset.term;
+            update();
+            entry.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+          suggestions.append(button);
+        });
+      };
+
+      input.addEventListener('input', update);
+      input.addEventListener('search', update);
+    })();
+  </script>
 </body>
 </html>
