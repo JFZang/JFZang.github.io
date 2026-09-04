@@ -1,6 +1,6 @@
 # Jeff Zhang
 
-jiefuzang@gmail.com | +44 7375 114239 | Oxford, United Kingdom
+jiefuzang@gmail.com | +44 7375 114239 | Oxford, United Kingdom | https://jfzang.github.io/
 
 ## Education
 
@@ -8,14 +8,14 @@ jiefuzang@gmail.com | +44 7375 114239 | Oxford, United Kingdom
 **MPhil in Finance and Economics**
 
 ### University College London || Sep 2019 - Jun 2022
-**BSc Economics, First Class Honours | Dean's List, Social and Historical Sciences Faculty (2022)**
+**BSc Economics, First Class Honours | Dean's List, UCL Faculty of Social & Historical Sciences (2022)**
 
 ## Work & Academic Experience
 
 ### Tianheng Auditing Firm || Feb 2024 - Apr 2024
 **Off-cycle Audit Intern**
 
-- Reviewed 150+ high-value transactions collectively worth over £10m for a subsidiary of a top 500 Chinese company, reconciling a risk-based sample covering more than 80% of total transaction value.
+- Reviewed 150+ high-value transactions worth more than £10m in aggregate for a subsidiary of one of China's top 500 companies, using risk-based sampling to cover over 80% of total transaction value.
 - Analysed financial ratios and historical account balances to identify unusual trends; participated in inventory verification and reviewed relevant legal documentation.
 
 ### Wise Living Technology Co., Ltd. || May 2022 - Aug 2022
@@ -28,7 +28,7 @@ jiefuzang@gmail.com | +44 7375 114239 | Oxford, United Kingdom
 **Team Lead, Portfolio Construction Programme**
 
 - Led a five-person team screening US-listed equities using valuation, profitability and leverage metrics and sector comparisons, shortlisting 10 stocks for portfolio construction.
-- Built and presented two portfolios using Excel-based Single-Index and Markowitz models under five scenario constraints; produced performance analysis and visualisations, placing first in the programme.
+- Built and presented two portfolios using Excel-based single-index and Markowitz models across five constraint scenarios; produced performance analysis and visualisations, placing first in the programme.
 
 ### China Galaxy Securities Co., Ltd. || May 2021 - Jul 2021
 **Sales & Trading and Investment Management Intern**
@@ -51,14 +51,14 @@ jiefuzang@gmail.com | +44 7375 114239 | Oxford, United Kingdom
 - Formulated position-sizing recommendations by assessing historical performance, incremental VaR, macroeconomic sensitivity and portfolio-level risk.
 
 ### UCL Chinese Students & Scholars Association, Career Division || Oct 2021 - Jun 2022
-**Career Division Executive; Events Officer**
+**Career Division Executive & Events Officer**
 
-- Career Division Executive, co-led the collaboration with Tencent's HR department to promote practice engagement among UCL Chinese students and alumni, establishing future sponsorship.
-- Events Officer, successfully launched two high-quality in-person career fairs and virtual TED Talk-style meetings, collaborated with financial industry entities to foster professional growth among members.
+- Co-led a collaboration with Tencent's HR team to increase career engagement among UCL Chinese students and alumni, laying the groundwork for future sponsorship.
+- Organised two in-person career fairs and virtual speaker events, collaborating with financial-services organisations to support members' professional development.
 
 ## Technical Skills & Additional Information
 
 - **Finance:** financial modelling, valuation (DCF, trading comparables, NAV), financial statement analysis, portfolio construction and risk analysis
-- **Tools:** Microsoft Excel, Python (data structures, APIs, databases and data visualisation), Stata
+- **Tools:** Microsoft Excel, Python, Stata
 - **Qualifications:** CFA Level III Candidate (August 2026 examination completed, results pending)
-- **Interests:** piano (ABRSM Grade 8), drama (LAMDA Grade 5), Karate (3rd Brown Belt)
+- **Interests:** piano (ABRSM Grade 8), drama (LAMDA Grade 5), karate (3rd brown belt)
