@@ -394,6 +394,64 @@ h3 {
   font-size: 18px;
 }
 
+.market-note-title {
+  margin: 22px 0 8px;
+  color: #1f2a44;
+  font-size: 25px;
+  line-height: 1.25;
+}
+
+.market-note-hero {
+  background: #27374f;
+}
+
+.market-note-article > p:first-child {
+  font-size: 21px;
+  line-height: 1.65;
+}
+
+.article-figure {
+  width: min(1080px, calc(100vw - 48px));
+  margin: 42px 50%;
+  transform: translateX(-50%);
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d8d1c5;
+}
+
+.article-figure figcaption {
+  margin-top: 12px;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.note-card {
+  padding: 34px 36px;
+  background: #fff;
+  border: 1px solid #d8d1c5;
+  border-top: 4px solid #8a5a2b;
+}
+
+.note-card h2 {
+  margin: 10px 0 16px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.note-card h2 a {
+  color: #1f2a44;
+  text-decoration: none;
+}
+
+.note-card h2 a:hover {
+  color: #8a5a2b;
+}
+
 .key-takeaway {
   margin-bottom: 56px;
   padding: 26px 28px;
