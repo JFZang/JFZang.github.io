@@ -482,3 +482,90 @@
     flex-direction: column;
   }
 }
+
+/* Long-form industry primers */
+.report-nav.long-report-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  background: rgba(248, 246, 241, 0.96);
+  border: 1px solid rgba(23, 42, 58, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(23, 42, 58, 0.06);
+  backdrop-filter: blur(12px);
+  padding: 12px 16px;
+}
+
+.long-report-nav a {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.baijiu-report .article-section,
+.baijiu-report .article-section h3 {
+  scroll-margin-top: 96px;
+}
+
+.baijiu-report .table-scroll table {
+  min-width: 760px;
+}
+
+.baijiu-report .report-flow {
+  margin: 24px 0;
+  padding: 20px 22px;
+  overflow-x: auto;
+  border: 1px solid rgba(23, 42, 58, 0.12);
+  border-radius: 12px;
+  background: #f4f1ea;
+  color: #183247;
+  font-size: 0.83rem;
+  line-height: 1.65;
+}
+
+.baijiu-report .report-flow code {
+  font: inherit;
+  white-space: pre;
+}
+
+.baijiu-report blockquote {
+  margin: 24px 0;
+  padding: 18px 22px;
+  border-left: 4px solid var(--accent, #b8702d);
+  background: rgba(184, 112, 45, 0.07);
+  color: #294458;
+}
+
+.baijiu-report ol,
+.baijiu-report ul {
+  padding-left: 1.35rem;
+}
+
+.baijiu-report li + li {
+  margin-top: 0.65rem;
+}
+
+.baijiu-report .sources-section li {
+  overflow-wrap: anywhere;
+}
+
+.baijiu-hero .article-deck {
+  max-width: 800px;
+}
+
+@media (max-width: 760px) {
+  .report-nav.long-report-nav {
+    margin-inline: -10px;
+    padding-inline: 12px;
+    border-radius: 10px;
+  }
+
+  .baijiu-report .report-flow {
+    margin-inline: -8px;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 0.76rem;
+  }
+}
