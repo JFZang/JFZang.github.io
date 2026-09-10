@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A valuation-led stock thesis on Zeta Global, focused on revenue quality, stock-based compensation, FCFE, dilution and the expectations embedded in the share price." />
-  <title>Zeta Global Stock Thesis | Jiefu Zhang</title>
+  <meta name="description" content="A valuation-led Zeta Global stock thesis on revenue quality, operating leverage, stock compensation, cash conversion and per-share value." />
+  <title>Zeta Global: The Growth Is Real; the Economics Still Need to Catch Up | Jiefu Zhang</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/research-report.css" />
 </head>
@@ -25,14 +25,11 @@
   <header class="article-hero research-hero">
     <div class="article-container">
       <p class="eyebrow">Stock Research · Marketing technology · NYSE: ZETA</p>
-      <h1>Zeta Global: strong momentum, demanding per-share economics</h1>
-      <p class="article-deck">
-        Zeta is winning enterprise marketing budgets, but reported revenue and adjusted cash flow
-        currently run ahead of gross-profit quality and cash earnings attributable to each share.
-      </p>
+      <h1>Zeta Global: The Growth Is Real; the Economics Still Need to Catch Up</h1>
+      <p class="article-deck">Strong demand is visible. The question is whether media-heavy growth can become per-share cash value.</p>
       <div class="article-meta">
         <span>Valuation date: 21 August 2026</span>
-        <span>12–18 month horizon</span>
+        <span>12 months horizon</span>
         <span>By Jiefu Zhang</span>
       </div>
     </div>
@@ -41,233 +38,857 @@
   <main class="article-main">
     <article class="article-container macro-article research-report">
       <nav class="report-nav" aria-label="Report sections">
-        <a href="#view">View</a>
-        <a href="#expectations">Expectations</a>
-        <a href="#theses">Theses</a>
-        <a href="#evidence">Evidence</a>
-        <a href="#forecast">Forecast</a>
-        <a href="#valuation">Valuation</a>
-        <a href="#catalysts">Catalysts &amp; risks</a>
-        <a href="#sources">Sources</a>
+          <a href="#what-zeta-does-and-why-its-revenue-is-not-pure-software">Company</a>
+          <a href="#investment-conclusion">Conclusion</a>
+          <a href="#financial-history-and-base-forecast">Financials</a>
+          <a href="#growth-increasingly-comes-from-installed-customers-and-m-and-a">Growth</a>
+          <a href="#the-zeta-margin-paradox">Economics</a>
+          <a href="#liveintent-and-marigold-add-two-routes-to-growth">M&amp;A</a>
+          <a href="#the-base-forecast-is-optimistic-about-growth-selective-about-leverage">Forecast</a>
+          <a href="#growth-still-requires-cash-investment">Investment</a>
+          <a href="#working-capital-is-part-of-revenue-quality">Working capital</a>
+          <a href="#stock-compensation-and-m-and-a-share-issuance-are-one-capital-allocation-issue">SBC &amp; dilution</a>
+          <a href="#valuation-a-good-operating-outcome-can-still-produce-a-neutral-stock">Valuation</a>
+          <a href="#what-would-change-the-view">What changes</a>
+          <a href="#risks-to-this-analysis">Risks</a>
+          <a href="#sources-and-methodology">Sources</a>
       </nav>
 
       <div class="rating-strip" aria-label="Investment summary">
-        <div class="rating-neutral"><span>Rating</span><strong>Neutral / Wait</strong></div>
-        <div><span>Price</span><strong>$29.07</strong></div>
-        <div><span>Target value</span><strong>$26.00</strong></div>
-        <div><span>Implied return</span><strong>−10.6%</strong></div>
+        <div class="rating-neutral"><span>Rating</span><strong>Neutral / Hold</strong></div>
+        <div><span>Reference price</span><strong>$29.07</strong></div>
+        <div><span>12-month target</span><strong>$31</strong></div>
+        <div><span>Implied upside</span><strong>6.2%</strong></div>
       </div>
 
-      <aside class="key-takeaway" id="view">
-        <p class="card-label">Investment view</p>
-        <p>
-          The business is stronger than the stock setup. My base case already reaches management's
-          2028 revenue and company-FCF targets, yet values Zeta at $24.64 per share. At the current
-          price, the reverse DCF requires a 22.3% terminal SBC-adjusted FCF margin—well above my 17.5% base.
-        </p>
-      </aside>
-
-      <section class="article-section" id="expectations">
-        <p class="section-kicker">Market expectations</p>
-        <h2>The price requires more than hitting the 2028 plan</h2>
-        <p>
-          Zeta reported Q2 2026 revenue of $442.8m, up 44%, and management guides to approximately
-          $1.818bn of FY2026 revenue, $405m of adjusted EBITDA and $255m of free cash flow.
-          <a href="https://s202.q4cdn.com/623583957/files/doc_financials/2026/q2/v2/2Q-26-Earnings-Supplemental_Final-1.pdf" target="_blank" rel="noopener noreferrer">Its 2028 plan</a>
-          calls for at least $2.3bn of revenue, a 25% adjusted EBITDA margin and at least $371m of FCF.
-        </p>
-        <p>
-          I model $2.34bn of 2028 revenue and $377m of company FCF. The gap is treatment, not topline
-          scepticism: after $140m of forecast stock compensation, SBC-adjusted FCF is $236m. The current price
-          therefore appears to capitalise management's operating plan plus a rapid improvement in the
-          portion of cash flow that actually accrues to current shareholders.
-        </p>
-
-        <div class="chart-panel" role="img" aria-label="Comparison of Q2 reported revenue growth, ex-Marigold revenue growth and the upper bound of ex-Marigold gross profit growth">
-          <h3>Q2 growth: the quality gap</h3>
-          <p class="chart-note">Percent year on year</p>
-          <div class="bar-chart">
-            <div class="bar-row"><span>Reported revenue</span><span class="bar-track"><span class="bar-fill" style="width: 88%"></span></span><span class="bar-value">44.0%</span></div>
-            <div class="bar-row"><span>Ex-Marigold revenue</span><span class="bar-track"><span class="bar-fill" style="width: 56%"></span></span><span class="bar-value">28.0%</span></div>
-            <div class="bar-row"><span>Ex-Marigold gross profit</span><span class="bar-track"><span class="bar-fill accent" style="width: 38.2%"></span></span><span class="bar-value">&lt;19.1%</span></div>
-          </div>
-          <p class="chart-note">
-            The gross-profit figure is an upper bound, not an estimate. It assigns Marigold the highest
-            cost ratio consistent with management's “below 30%” statement, maximising residual legacy-Zeta gross profit.
-          </p>
+      <section class="article-section report-lead" id="overview"><p>Zeta&#39;s demand case rests on two disclosed indicators: management attributed 63.9% of FY2025 incremental revenue to existing customers, and Zeta reported that its super-scaled cohort—responsible for 87% of FY2025 revenue—continued to expand in both customer count and ARPU through Q2 FY2026. Its earnings profile is much less mature. Zeta only crossed annual GAAP operating break-even in FY2025, recording $5.4m of operating income on $1.305bn of revenue; after a Q1 FY2026 net loss, Q2 returned to $16.9m of operating income and $8.2m of net income. Strong demand and emerging GAAP profitability are the combination that often drives a growth-stock rerating: investors are willing to pay for revenue growth when it begins to convert into operating leverage. Zeta is not a clean software version of that setup, however, because media-heavy revenue, stock-based compensation and working-capital requirements can weaken the conversion from growth into per-share cash value.</p>
+<p>I rate Zeta <strong>Neutral / Hold</strong>, with a <strong>$31 twelve-month target</strong> against a <strong>$29.07 reference price</strong>, implying approximately <strong>6.2% upside</strong>. The target is probability-weighted; the standalone Base case is worth <strong>$33.98</strong>. That Base is not conservative: it forecasts consolidated revenue rising from <strong>$1.818bn in FY2026 to $3.768bn in FY2030</strong> and forecast GAAP EBIT margin increasing from <strong>3.0% to 14.4%</strong>. Achieving it requires approximately <strong>20% revenue CAGR</strong> and S&amp;M and G&amp;A growing materially more slowly than revenue, even as gross margin edges down and stock-based compensation remains a real shareholder cost. Expense ratios have normalised materially from the FY2021–FY2022 post-IPO spike, but S&amp;M remains above its FY2020 level and the Base requires G&amp;A to move well below its pre-IPO ratio. The analyst scenario weighting therefore assigns <strong>30% to Bear</strong>, pulling the probability-weighted value down to <strong>$30.87</strong>, rounded to $31. The Hold rating reflects execution-weighted valuation risk—not a pessimistic demand forecast.</p>
+</section><div class="report-download">
+          <div><strong>Reader model</strong><p>Historical financials, forecast drivers, scenarios, DCF and sensitivities.</p></div>
+          <a class="button-link" href="../assets/documents/ZETA-Global-Forecast-Valuation-Model.xlsx">Download Excel model</a>
         </div>
+
+      <section class="article-section" id="what-zeta-does-and-why-its-revenue-is-not-pure-software">
+        <h2>What Zeta does—and why its revenue is not pure software</h2>
+        <p>Zeta helps large enterprises decide which consumers to reach, what message or offer to deliver, where to deliver it, and how to measure the result. A customer can bring first-party data into the Zeta Marketing Platform, combine it with Zeta&#39;s identity and behavioural data, build audiences, automate decisions, send communications through owned channels such as email, or activate paid media across third-party inventory. Zeta therefore sits across several layers that are often supplied separately: customer data and identity, decisioning, journey orchestration, messaging, media activation and measurement. <a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526068598/zeta-20251231.htm" target="_blank" rel="noopener noreferrer">Zeta FY2025 Form 10-K</a>.</p>
+<p>That breadth makes the revenue model economically mixed. Zeta earns subscription fees, volume-based utilisation revenue and professional-services fees. Some activity is delivered directly through Zeta&#39;s own platform; other activity requires third-party publishers, media inventory, data or channel partners. The first category can resemble software, while paid-media activation may include substantial third-party delivery cost. Consequently, a dollar of additional Zeta revenue does not always carry the same gross margin, and reported revenue can grow faster than gross profit when customer spending shifts toward media.</p>
+<p>Two M&amp;A transactions materially widened this model. Zeta purchased <strong>LiveIntent in October 2024</strong>, adding people-based identity, audience-building, media-activation and publisher-monetisation capabilities. It purchased the <strong>Marigold Enterprise Business in November 2025</strong>, adding email, loyalty and customer-engagement products together with a large international installed base. These transactions increased Zeta&#39;s exposure to both media activation and more subscription-oriented messaging. Athena is intended to strengthen the intelligence and decisioning layer and could provide a more software-oriented counterweight. <a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526068598/zeta-20251231.htm" target="_blank" rel="noopener noreferrer">Zeta FY2025 Form 10-K</a>; <a href="https://s202.q4cdn.com/623583957/files/doc_financials/2026/q2/v2/2Q-26-Earnings-Supplemental_Final-1.pdf" target="_blank" rel="noopener noreferrer">Zeta Q2 FY2026 earnings supplemental</a>. Zeta is therefore neither a pure SaaS vendor nor a conventional advertising intermediary.</p>
+<p>For the industry economics behind software, identity, messaging and media activation, see the companion <a href="enterprise-marketing-data-platforms.html">Enterprise Marketing Data and Activation industry research</a>.</p>
+
       </section>
 
-      <section class="article-section country-section" id="theses">
-        <p class="section-kicker">Core theses</p>
-        <h2>Three claims that can be verified</h2>
-        <div class="thesis-list">
-          <article class="thesis-card">
-            <p class="card-label">01 · Revenue quality</p>
-            <h3>Organic revenue is growing faster than organic gross profit</h3>
-            <p>
-              Q2 GAAP gross margin fell to 59.1% from 62.1%. Zeta's contracts can include third-party
-              media, and its filing requires principal-versus-agent judgement. I need gross margin above
-              roughly 61% or ex-M&amp;A gross-profit growth to converge toward revenue growth before treating
-              all incremental revenue like software.
-            </p>
-          </article>
-          <article class="thesis-card">
-            <p class="card-label">02 · Per-share economics</p>
-            <h3>Adjusted cash flow is not yet cash earnings per share</h3>
-            <p>
-              H1 2026 company FCF was $99.6m, versus $105.1m of stock compensation. Unrecognised SBC was
-              $381.4m at June 2026, excluding future grants. My model assumes SBC falls from 11.0% of
-              revenue in 2026 to 6.0% in 2028; failure to fall below 9% in 2027 is a material negative.
-            </p>
-          </article>
-          <article class="thesis-card">
-            <p class="card-label">03 · Valuation</p>
-            <h3>The operating targets are credible—and largely priced</h3>
-            <p>
-              My base forecast is not below management's 2028 plan. Upside requires a direct-mix shift,
-              successful Marigold cross-sell and provable commercial returns from Athena and the Palantir
-              partnership, alongside dilution discipline.
-            </p>
-          </article>
-        </div>
+      <section class="article-section" id="investment-conclusion">
+        <h2>Investment conclusion</h2>
+        <p>The central investment question can be stated more precisely than “growth versus margin”:</p>
+<blockquote>
+<p>Is Zeta increasing customer wallet share through media and activation, and can the resulting lower-margin revenue still create enough after-S&amp;M contribution, cash conversion and per-share value?</p>
+</blockquote>
+<p>This formulation matters because Zeta combines software, data, owned-channel messaging and paid-media activation. An existing customer can buy more from Zeta, lifting NRR and ARPU, while shifting the revenue mix toward services with higher third-party media cost. In that case, demand quality may improve while incremental gross margin falls. The direction of the economics cannot be inferred from either KPI alone.</p>
+<p>The most useful disclosed approximation is therefore:</p>
+<div class="formula-block">
+<strong>Revenue retained after delivery cost and incremental S&amp;M</strong>
+<span>= Incremental gross margin − incremental S&amp;M cost ratio</span>
+</div>
+
+<p>This spread is an <strong>incremental commercial-contribution proxy</strong>: it tests whether each additional revenue dollar retains more or less value after delivery cost and incremental S&amp;M.</p>
+<p>Three conclusions follow.</p>
+<ol>
+<li><strong>Demand among Zeta&#39;s large customers remains strong.</strong> Both the size of the super-scaled cohort and spending per customer continued to rise through Q2 FY2026.</li>
+<li><strong>The quality of incremental revenue weakened in H1 FY2026.</strong> Delivery economics and incremental commercial burden both moved the wrong way; Marigold, seasonality and mix add noise, but do not make the signal irrelevant.</li>
+<li><strong>The valuation depends on expenses growing more slowly than revenue, not on a higher gross margin.</strong> The Base keeps R&amp;D near its current share of revenue and continues to fund equipment, data and software. Most of the profit improvement therefore comes from S&amp;M and G&amp;A becoming smaller percentages of revenue.</li>
+</ol>
+
       </section>
 
-      <section class="article-section country-section" id="evidence">
-        <p class="section-kicker">Expanded filing evidence</p>
-        <h2>The longitudinal record changes how the headline KPIs should be read</h2>
-        <p>
-          The evidence base includes the FY2023–FY2025 Forms 10-K and every Form 10-Q from Q1 2024
-          through Q2 2026. It shows stable customer definitions, but changing KPI emphasis and acquisition scope.
-        </p>
-        <div class="table-scroll">
-          <table>
-            <thead><tr><th>Disclosure</th><th class="numeric">FY2023</th><th class="numeric">FY2024</th><th class="numeric">FY2025</th><th>Latest read</th></tr></thead>
-            <tbody>
-              <tr><td>Super-scaled customers</td><td class="numeric">131</td><td class="numeric">148</td><td class="numeric">184</td><td>197 at Q2 2026</td></tr>
-              <tr><td>NRR</td><td class="numeric">110.9%</td><td class="numeric">113.6%</td><td class="numeric">128.0%</td><td>120% when LiveIntent is excluded</td></tr>
-              <tr><td>Direct revenue mix</td><td class="numeric">72%</td><td class="numeric">70%</td><td class="numeric">74%</td><td>73% in H1 2026</td></tr>
-              <tr><td>Total RPO</td><td class="numeric">$214.6m</td><td class="numeric">$167.1m</td><td class="numeric">$310.7m</td><td>$352.2m at Q2 after Marigold</td></tr>
-              <tr><td>Unrecognised SBC</td><td class="numeric">$250.8m</td><td class="numeric">$219.6m</td><td class="numeric">$254.4m</td><td>$428.1m Q1 / $381.4m Q2</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="table-note">The filed 128% NRR and 120% ex-LiveIntent NRR are different scopes, not contradictory arithmetic. The model uses the acquisition-adjusted figure for operating analysis.</p>
+      <section class="article-section" id="financial-history-and-base-forecast">
+        <h2>Financial history and Base forecast</h2>
+        <p>The tables below keep only the lines needed to see the investment argument. The complete income statement, FCFF bridge and supporting schedules remain in the <a href="../assets/documents/ZETA-Global-Forecast-Valuation-Model.xlsx">publication model</a>. Actual figures come from Zeta&#39;s filings; dollar amounts are in millions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Historical operating trend</th>
+<th align="right">FY2020A</th>
+<th align="right">FY2021A</th>
+<th align="right">FY2022A</th>
+<th align="right">FY2023A</th>
+<th align="right">FY2024A</th>
+<th align="right">FY2025A</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Revenue</td>
+<td align="right">368.1</td>
+<td align="right">458.3</td>
+<td align="right">591.0</td>
+<td align="right">728.7</td>
+<td align="right">1,005.8</td>
+<td align="right">1,304.7</td>
+</tr>
+<tr>
+<td>YoY growth</td>
+<td align="right">20.3%</td>
+<td align="right">24.5%</td>
+<td align="right">28.9%</td>
+<td align="right">23.3%</td>
+<td align="right">38.0%</td>
+<td align="right">29.7%</td>
+</tr>
+<tr>
+<td>Gross margin, excluding D&amp;A</td>
+<td align="right">59.6%</td>
+<td align="right">61.9%</td>
+<td align="right">63.5%</td>
+<td align="right">62.3%</td>
+<td align="right">60.3%</td>
+<td align="right">60.6%</td>
+</tr>
+<tr>
+<td>S&amp;M / revenue</td>
+<td align="right">21.0%</td>
+<td align="right">50.0%</td>
+<td align="right">50.6%</td>
+<td align="right">39.6%</td>
+<td align="right">31.3%</td>
+<td align="right">26.1%</td>
+</tr>
+<tr>
+<td>R&amp;D / revenue</td>
+<td align="right">8.6%</td>
+<td align="right">14.1%</td>
+<td align="right">11.8%</td>
+<td align="right">10.1%</td>
+<td align="right">9.0%</td>
+<td align="right">9.0%</td>
+</tr>
+<tr>
+<td>G&amp;A / revenue</td>
+<td align="right">19.2%</td>
+<td align="right">41.4%</td>
+<td align="right">36.1%</td>
+<td align="right">28.2%</td>
+<td align="right">20.3%</td>
+<td align="right">17.9%</td>
+</tr>
+<tr>
+<td>GAAP EBIT margin</td>
+<td align="right">(2.2%)</td>
+<td align="right">(54.2%)</td>
+<td align="right">(43.8%)</td>
+<td align="right">(23.0%)</td>
+<td align="right">(6.8%)</td>
+<td align="right">0.4%</td>
+</tr>
+<tr>
+<td>SBC / revenue</td>
+<td align="right">0.0%</td>
+<td align="right">56.5%</td>
+<td align="right">50.6%</td>
+<td align="right">33.3%</td>
+<td align="right">19.4%</td>
+<td align="right">13.6%</td>
+</tr>
+</tbody></table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Base forecast and FCFF</th>
+<th align="right">FY2026E</th>
+<th align="right">FY2027E</th>
+<th align="right">FY2028E</th>
+<th align="right">FY2029E</th>
+<th align="right">FY2030E</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Revenue</td>
+<td align="right">1,818.0</td>
+<td align="right">2,218.0</td>
+<td align="right">2,683.7</td>
+<td align="right">3,193.6</td>
+<td align="right">3,768.5</td>
+</tr>
+<tr>
+<td>YoY growth</td>
+<td align="right">39.3%</td>
+<td align="right">22.0%</td>
+<td align="right">21.0%</td>
+<td align="right">19.0%</td>
+<td align="right">18.0%</td>
+</tr>
+<tr>
+<td>Gross margin, excluding D&amp;A</td>
+<td align="right">58.8%</td>
+<td align="right">58.4%</td>
+<td align="right">58.0%</td>
+<td align="right">57.7%</td>
+<td align="right">57.4%</td>
+</tr>
+<tr>
+<td>S&amp;M / revenue</td>
+<td align="right">23.8%</td>
+<td align="right">22.5%</td>
+<td align="right">21.3%</td>
+<td align="right">20.3%</td>
+<td align="right">19.4%</td>
+</tr>
+<tr>
+<td>R&amp;D / revenue</td>
+<td align="right">9.8%</td>
+<td align="right">9.3%</td>
+<td align="right">9.3%</td>
+<td align="right">9.3%</td>
+<td align="right">9.3%</td>
+</tr>
+<tr>
+<td>G&amp;A / revenue</td>
+<td align="right">16.6%</td>
+<td align="right">15.2%</td>
+<td align="right">14.1%</td>
+<td align="right">13.2%</td>
+<td align="right">12.4%</td>
+</tr>
+<tr>
+<td>Forecast GAAP EBIT margin</td>
+<td align="right">3.0%</td>
+<td align="right">7.6%</td>
+<td align="right">10.5%</td>
+<td align="right">12.6%</td>
+<td align="right">14.4%</td>
+</tr>
+<tr>
+<td>SBC / revenue</td>
+<td align="right">11.2%</td>
+<td align="right">7.3%</td>
+<td align="right">6.9%</td>
+<td align="right">6.6%</td>
+<td align="right">6.4%</td>
+</tr>
+<tr>
+<td>D&amp;A</td>
+<td align="right">91.8</td>
+<td align="right">85.0</td>
+<td align="right">76.3</td>
+<td align="right">73.4</td>
+<td align="right">74.6</td>
+</tr>
+<tr>
+<td>Operating fixed investment</td>
+<td align="right">(40.2)</td>
+<td align="right">(43.9)</td>
+<td align="right">(48.0)</td>
+<td align="right">(52.2)</td>
+<td align="right">(56.5)</td>
+</tr>
+<tr>
+<td>Investment in working capital</td>
+<td align="right">(52.8)</td>
+<td align="right">(32.0)</td>
+<td align="right">(37.0)</td>
+<td align="right">(40.5)</td>
+<td align="right">(45.6)</td>
+</tr>
+<tr>
+<td>FCFF</td>
+<td align="right">53.0</td>
+<td align="right">171.8</td>
+<td align="right">223.5</td>
+<td align="right">283.5</td>
+<td align="right">379.1</td>
+</tr>
+<tr>
+<td>FCFF margin</td>
+<td align="right">2.9%</td>
+<td align="right">7.7%</td>
+<td align="right">8.3%</td>
+<td align="right">8.9%</td>
+<td align="right">10.1%</td>
+</tr>
+</tbody></table></div>
+<p>The history establishes demand, but not yet mature economics. Zeta&#39;s post-IPO organisation was built well ahead of revenue, and later acquisitions enlarged the cost base again. The Base asks that this investment finally convert: gross margin softens and R&amp;D remains funded, so the improvement cannot come from a more favourable product mix or a thinner product roadmap. It must come mainly from serving a larger revenue base with proportionally less S&amp;M and G&amp;A. That direction has precedent; sustaining it across a business that now contains more media activity, more products and more international infrastructure is the real underwriting decision.</p>
+
       </section>
 
-      <section class="article-section country-section" id="forecast">
-        <p class="section-kicker">Forecast</p>
-        <h2>Reported growth converts slowly into analyst-adjusted cash flow</h2>
-        <div class="table-scroll">
-          <table>
-            <thead>
-              <tr><th>USD m except per share</th><th class="numeric">2026E</th><th class="numeric">2027E</th><th class="numeric">2028E</th><th class="numeric">2029E</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Revenue</td><td class="numeric">1,818</td><td class="numeric">2,109</td><td class="numeric">2,341</td><td class="numeric">2,645</td></tr>
-              <tr><td>Growth</td><td class="numeric">39.3%</td><td class="numeric">16.0%</td><td class="numeric">11.0%</td><td class="numeric">13.0%</td></tr>
-              <tr><td>Adjusted EBITDA margin</td><td class="numeric">22.3%</td><td class="numeric">23.4%</td><td class="numeric">25.0%</td><td class="numeric">25.5%</td></tr>
-              <tr><td>SBC / revenue</td><td class="numeric">11.0%</td><td class="numeric">8.5%</td><td class="numeric">6.0%</td><td class="numeric">5.5%</td></tr>
-              <tr><td>Normalised EPS</td><td class="numeric">$0.32</td><td class="numeric">$0.59</td><td class="numeric">$0.92</td><td class="numeric">$1.08</td></tr>
-              <tr><td>Company FCF</td><td class="numeric">255</td><td class="numeric">316</td><td class="numeric">377</td><td class="numeric">450</td></tr>
-              <tr><td>Standard FCFE</td><td class="numeric">305</td><td class="numeric">316</td><td class="numeric">377</td><td class="numeric">450</td></tr>
-              <tr><td>SBC-adjusted FCF</td><td class="numeric">55</td><td class="numeric">137</td><td class="numeric">236</td><td class="numeric">304</td></tr>
-              <tr><td>Diluted shares</td><td class="numeric">256.6</td><td class="numeric">264.3</td><td class="numeric">270.9</td><td class="numeric">276.3</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="table-note">
-          Normalised EPS is my analytical measure, not GAAP guidance or consensus. Standard FCFE includes net borrowing;
-          the 2026 figure includes an estimated $50m refinancing increase. The primary SBC-adjusted FCF DCF uses current
-          shares; the separate dilution-only FCFE cross-check does not deduct SBC.
-        </p>
+      <section class="article-section" id="growth-increasingly-comes-from-installed-customers-and-m-and-a">
+        <h2>Growth increasingly comes from installed customers and M&amp;A</h2>
+        <p>Management&#39;s <strong>existing-customer contribution</strong> measures revenue growth from customers present at the start of the year. Its <strong>new-customer category</strong> also captures customers entering through M&amp;A, so it is not the same as growth from customers won directly by Zeta.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Demand evidence</th>
+<th>Period</th>
+<th align="right">Observed result</th>
+<th>What it says—and what it does not</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Existing-customer contribution</td>
+<td>FY2025</td>
+<td align="right">63.9% of revenue increase; 19.0ppt of YoY growth</td>
+<td>Most growth came from customers already using Zeta</td>
+</tr>
+<tr>
+<td>Disclosed acquired-business contribution</td>
+<td>FY2025</td>
+<td align="right">28.2% of revenue increase; 8.4ppt of YoY growth</td>
+<td>M&amp;A was material to headline growth</td>
+</tr>
+<tr>
+<td>Estimated new-customer contribution excluding disclosed M&amp;A</td>
+<td>FY2025</td>
+<td align="right">8.0% of revenue increase; 2.4ppt of YoY growth</td>
+<td>The directly won component was the smallest part visible in the bridge</td>
+</tr>
+<tr>
+<td>Existing-customer contribution</td>
+<td>H1 FY2026</td>
+<td align="right">39% of revenue increase</td>
+<td>Installed-account expansion remained meaningful after Marigold closed</td>
+</tr>
+<tr>
+<td>Super-scaled customers&#39; share of revenue</td>
+<td>FY2025</td>
+<td align="right">87%</td>
+<td>The large-customer KPI covers most of reported revenue</td>
+</tr>
+<tr>
+<td>Super-scaled count / rounded ARPU growth</td>
+<td>Q2 FY2026</td>
+<td align="right">17.3% / 12.5%</td>
+<td>Both the cohort and spending per customer were expanding</td>
+</tr>
+<tr>
+<td>Count × rounded ARPU cross-check</td>
+<td>Q2 FY2026</td>
+<td align="right">31.9%</td>
+<td>Supports strong large-customer activity, but is not a consolidated-revenue formula</td>
+</tr>
+</tbody></table></div>
+<p>The useful signal is not simply that growth was high. Zeta is getting a large share of new revenue from customers it has already implemented, which makes continued wallet-share expansion more plausible than a forecast built entirely on new logos. It also means the mix deserves scrutiny: an installed customer can buy more media activation, lifting revenue and retention while contributing fewer gross-profit cents per dollar.</p>
+<p>The bridge cannot cleanly produce an organic-growth series because political activity and incompletely disclosed M&amp;A revenue remain mixed into some periods. The model therefore forecasts consolidated revenue and uses the customer bridge as a reasonableness check. The <a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526068598/zeta-20251231.htm" target="_blank" rel="noopener noreferrer">FY2025 Form 10-K</a> and <a href="https://s202.q4cdn.com/623583957/files/doc_financials/2026/q2/v2/2Q-26-Earnings-Supplemental_Final-1.pdf" target="_blank" rel="noopener noreferrer">Q2 FY2026 earnings supplemental</a> support the table.</p>
 
-        <div class="report-download">
-          <div>
-            <strong>Download the forecast and valuation model</strong>
-            <p>Editable assumptions, historical financials, KPI bridges, reverse DCF, scenarios, checks and source lineage.</p>
-          </div>
-          <a class="button-link" href="../assets/documents/ZETA-Global-Forecast-Valuation-Model.xlsx" download>Download .xlsx</a>
-        </div>
       </section>
 
-      <section class="article-section country-section" id="valuation">
-        <p class="section-kicker">Valuation</p>
-        <h2>SBC-adjusted FCF DCF, with a dilution-only FCFE cross-check</h2>
-        <p>
-          I use an equity DCF on SBC-adjusted FCF because EV/revenue is distorted by media pass-through
-          and adjusted EBITDA excludes a material employee cost. The base case uses a 10.6% cost of equity,
-          3.0% terminal growth and 251.0m current common shares. A second path uses standard FCFE per forecast
-          diluted share without deducting SBC; it returns $26.19 per share and avoids double counting.
-        </p>
-        <div class="chart-panel scenario-chart" role="img" aria-label="Bear, base, probability-weighted and bull values per share compared with the current price">
-          <h3>Scenario value per share</h3>
-          <p class="chart-note">Current price: $29.07</p>
-          <div class="bar-chart">
-            <div class="bar-row"><span>Bear</span><span class="bar-track"><span class="bar-fill negative" style="width: 23.7%"></span></span><span class="bar-value">$10.91</span></div>
-            <div class="bar-row"><span>Base</span><span class="bar-track"><span class="bar-fill accent" style="width: 53.4%"></span></span><span class="bar-value">$24.64</span></div>
-            <div class="bar-row"><span>Weighted</span><span class="bar-track"><span class="bar-fill accent" style="width: 56.8%"></span></span><span class="bar-value">$26.19</span></div>
-            <div class="bar-row"><span>Bull</span><span class="bar-track"><span class="bar-fill" style="width: 100%"></span></span><span class="bar-value">$46.10</span></div>
-          </div>
-        </div>
-        <div class="watch-grid">
-          <div><strong>Base</strong><p>$24.64 per share, 15.2% below the market price.</p></div>
-          <div><strong>Risk-weighted</strong><p>$26.19 per share using 20% / 60% / 20% bear, base and bull weights.</p></div>
-          <div><strong>Reverse DCF</strong><p>Current price requires a 22.3% terminal SBC-adjusted FCF margin.</p></div>
-          <div><strong>Dilution cross-check</strong><p>Standard FCFE per diluted share implies $26.19, without an SBC deduction.</p></div>
-          <div><strong>Relative diagnostic</strong><p>17.9x adjusted EBITDA becomes ~37x after SBC and recurring M&amp;A cost.</p></div>
-        </div>
+      <section class="article-section" id="the-zeta-margin-paradox">
+        <h2>The Zeta margin paradox</h2>
+        <p>FY2025 NRR was <strong>128%</strong>, versus <strong>120% excluding LiveIntent</strong>. Both readings show that the starting customer cohort spent more, while the gap indicates that the media-heavy acquisition influenced the reported metric. Higher NRR can therefore coexist with lower incremental gross margin: customers may become more embedded by buying more activation and media, even though more of each revenue dollar passes to third parties.</p>
+<p>The offset should appear in selling efficiency. Expanding an implemented account ought to require less incremental S&amp;M than winning and onboarding a new one. The useful test is therefore the spread between incremental gross margin and the incremental S&amp;M cost ratio. A lower incremental gross margin is economically acceptable if S&amp;M falls by more. If both measures deteriorate, Zeta is adding lower-margin revenue without obtaining the expected cross-sell or scale benefit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Period</th>
+<th align="right">Incremental gross margin</th>
+<th align="right">Incremental S&amp;M cost ratio</th>
+<th align="right">Retained after delivery cost and incremental S&amp;M</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FY2024A</td>
+<td align="right">54.9%</td>
+<td align="right">9.4%</td>
+<td align="right">45.4%</td>
+</tr>
+<tr>
+<td>FY2025A</td>
+<td align="right">61.9%</td>
+<td align="right">8.5%</td>
+<td align="right">53.3%</td>
+</tr>
+<tr>
+<td>H1 FY2026A</td>
+<td align="right">53.8%</td>
+<td align="right">16.8%</td>
+<td align="right">37.0%</td>
+</tr>
+<tr>
+<td>FY2026E Base</td>
+<td align="right">54.0%</td>
+<td align="right">18.2%</td>
+<td align="right">35.8%</td>
+</tr>
+<tr>
+<td>FY2027E Base</td>
+<td align="right">57.0%</td>
+<td align="right">16.5%</td>
+<td align="right">40.5%</td>
+</tr>
+<tr>
+<td>FY2030E Base</td>
+<td align="right">56.0%</td>
+<td align="right">14.5%</td>
+<td align="right">41.5%</td>
+</tr>
+</tbody></table></div>
+<p>FY2021–FY2023 incremental ratios are poor operating benchmarks because large post-IPO cost resets dominate the calculation. The recent sequence is more useful: FY2025 combined unusually good media-cost conversion with low incremental S&amp;M, but H1 FY2026 reversed both. That does not prove the installed-customer strategy is failing; it shows that revenue mix and selling efficiency have to be read together.</p>
+<p>The Base assumes a partial recovery, not a return to the FY2025 peak. That is plausible if more spending comes from already implemented customers and the enlarged sales organisation begins to carry more revenue. It is not automatic: if media-heavy growth continues to need nearly the same commercial effort as a new deployment, the retained-revenue proxy will remain depressed even while NRR and headline revenue look healthy.</p>
+
       </section>
 
-      <section class="article-section country-section" id="catalysts">
-        <p class="section-kicker">Catalysts and decision rules</p>
+      <section class="article-section" id="liveintent-and-marigold-add-two-routes-to-growth">
+        <h2>LiveIntent and Marigold add two routes to growth</h2>
+        <div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>What Zeta acquired</th>
+<th>Historical evidence</th>
+<th>What the Base needs</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LiveIntent</td>
+<td>Identity, media activation and publisher monetisation</td>
+<td>$84.2m FY2025 revenue; estimated economic purchase cost increased from about $277m at close to $330.2m as the earn-out estimate rose</td>
+<td>Gross-profit dollars and after-S&amp;M contribution must grow fast enough to justify both the media-heavy mix and higher final consideration</td>
+</tr>
+<tr>
+<td>Marigold Enterprise</td>
+<td>Email, loyalty and customer-engagement products plus an international installed base</td>
+<td>$238.2m pre-deal revenue; 64.9% gross margin excluding D&A; 11.7% EBITDA proxy margin; cash from operations after operating investment of negative $6.5m</td>
+<td>Retain customers, consolidate products and tooling, cross-sell Zeta data and activation, and reduce duplicated selling and central functions without underfunding R&amp;D</td>
+</tr>
+</tbody></table></div>
+<p>The acquisitions improve the credibility of high revenue growth because Zeta now has more products and a larger installed base. They do not automatically improve economics. LiveIntent appears to have performed strongly enough to raise the expected earn-out, but it also reinforces the lower-margin media mix. Marigold brings higher-gross-margin products, yet its <a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526041153/zeta-ex99_1.htm" target="_blank" rel="noopener noreferrer">pre-deal carve-out</a> carried weak operating leverage and high R&amp;D and D&amp;A. The combined thesis is therefore cross-sell plus cost consolidation, not simply adding the two companies&#39; revenue.</p>
+<p>This distinction also explains the forecast. The Base includes the acquired revenue and gradual S&amp;M and G&amp;A absorption, but no further transaction. It preserves R&amp;D because Marigold&#39;s products still require maintenance, migration and support. The key evidence is whether retention holds while duplicated sales coverage, infrastructure and corporate functions decline as a share of the enlarged revenue base.</p>
+
+      </section>
+
+      <section class="article-section" id="the-base-forecast-is-optimistic-about-growth-selective-about-leverage">
+        <h2>The Base forecast is optimistic about growth, selective about leverage</h2>
+        <h3>Revenue: credible near term, demanding in duration</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Revenue checkpoint</th>
+<th align="right">Implied growth / value</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://s202.q4cdn.com/623583957/files/doc_financials/2026/q2/v2/2Q-26-Earnings-Supplemental_Final-1.pdf" target="_blank" rel="noopener noreferrer">Management&#39;s FY2028 revenue target</a> of at least $2.3bn, measured from the $1.818bn FY2026 Base</td>
+<td align="right">Approximately 12.5% CAGR</td>
+<td>Company-set minimum benchmark</td>
+</tr>
+<tr>
+<td>Analyst Base in FY2028</td>
+<td align="right">$2.684bn; approximately 21.5% CAGR</td>
+<td>$384m, or 16.7%, above the management target</td>
+</tr>
+<tr>
+<td>Analyst Base, FY2028–FY2030</td>
+<td align="right">Approximately 18.5% CAGR</td>
+<td>Tests whether high growth can persist on a much larger revenue base</td>
+</tr>
+</tbody></table></div>
+<p>The forecast uses one consolidated revenue line and assumes no further M&amp;A. FY2026 is distorted upward by a full year of Marigold against only a short post-close contribution in FY2025; the later path is a set of explicit annual judgements rather than a mechanical organic-growth series. Political years receive a modest offset, but not enough to manufacture a precise cycle from incomplete disclosure.</p>
+<p>The Base sits well above management&#39;s FY2028 minimum. The evidence supporting that gap is the combination of installed-customer expansion, a growing large-customer cohort and more products available for cross-sell—not a simple continuation of acquisition-affected growth. The harder assumption is duration. Even as the growth rate declines, the annual revenue dollars that Zeta must add keep rising. Without another acquisition or a measurable Athena contribution, the company has to keep deepening existing relationships while still adding new ones. That is plausible, but it is the part of the revenue case that deserves the highest burden of proof.</p>
+<h3>Athena is an upside option, not a Base-case plug</h3>
+<p>Athena could shift more of Zeta&#39;s value toward software-like decisioning and automation, but paid adoption, pricing and implementation savings remain unquantified. The Base therefore gives Athena no separate revenue or margin uplift. It does, however, keep R&amp;D growing in line with the platform after FY2027, consistent with recent R&amp;D elasticity and management&#39;s <a href="https://investors.zetaglobal.com/events-and-presentations/presentations/presentation-details/2025/Investor-Day-2025-2025-xSj8cllhAi/default.aspx" target="_blank" rel="noopener noreferrer">AI, Athena and platform priorities</a>. Near-term R&amp;D leverage would be a warning if it arrived before product consolidation, adoption and retention evidence: lower spending would improve reported margin, but could weaken the very product transition needed to make Zeta less media-dependent.</p>
+<h3>Base margin expansion requires S&amp;M and G&amp;A absorption</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Forecast line</th>
+<th>Model mechanics</th>
+<th>Base input</th>
+<th>Why it fits Zeta</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gross profit</td>
+<td>Prior-year gross profit + incremental gross margin × revenue increase</td>
+<td>57% in FY2027; 56% thereafter</td>
+<td>Allows media-heavy growth to carry a lower margin than the installed base instead of forcing consolidated margin expansion</td>
+</tr>
+<tr>
+<td>S&amp;M</td>
+<td>Prior-year S&amp;M + incremental S&amp;M cost ratio × revenue increase</td>
+<td>16.5% in FY2027, declining to 14.5% by FY2030</td>
+<td>Tests the commercial cost of the next revenue dollar; existing-account expansion should be cheaper than repeatedly winning and implementing a new customer</td>
+</tr>
+<tr>
+<td>R&amp;D</td>
+<td>Direct growth in FY2027; thereafter revenue growth × elasticity</td>
+<td>15% in FY2027; 1.0× elasticity from FY2028</td>
+<td>Keeps product spending aligned with platform scale while Athena and the Marigold product set still require development and consolidation</td>
+</tr>
+<tr>
+<td>G&amp;A</td>
+<td>Direct growth in FY2027; thereafter the lower of a cap and revenue growth × elasticity</td>
+<td>12% in FY2027; <code>MIN(12%, 60% × revenue growth)</code> thereafter</td>
+<td>Treats finance, legal, HR and central infrastructure as partly scalable, without letting election-supported revenue create a permanent overhead step-up</td>
+</tr>
+</tbody></table></div>
+<p>These choices form one coherent operating bet. Zeta does not need a richer mix or lower R&amp;D to expand EBIT; it needs more revenue to pass through an already-built commercial and corporate platform. S&amp;M uses an incremental formula because the question is how much extra selling cost accompanies extra revenue, not what arbitrary percentage of total revenue S&amp;M should reach. The gradual improvement assumes customer expansion and sales integration help, but stops well short of immediately returning to the unusually low FY2024–FY2025 incremental cost ratios.</p>
+<p>G&amp;A is the less visible—and more demanding—part of the leverage case. One finance, legal or HR platform can support a larger company, but Marigold also added international entities, compliance work, product support and integration tasks. The 60% elasticity is therefore a middle course: it allows overhead to grow meaningfully, while assuming scale absorbs part of that growth. If those integration costs remain embedded rather than temporary, the Base will miss even if revenue and gross profit are correct.</p>
+
+      </section>
+
+      <section class="article-section" id="growth-still-requires-cash-investment">
+        <h2>Growth still requires cash investment</h2>
+        <p>The model keeps equipment/data and software investment separate. FY2026 annualises H1 cash spending because management has not supplied a different H2 plan. FY2027 then grows equipment/data by 8% and software by 10%. From FY2028, the two categories respond to revenue growth at 40% and 50% elasticities, subject to the same 8% and 10% caps. Software receives the higher response because the product roadmap should move more with platform demand; equipment and data are steadier capacity and replacement programmes.</p>
+<p>The important check is that FCFF does not appear merely because old assets run off. Cash investment continues to rise. D&amp;A is higher at first because LiveIntent and Marigold purchase-accounting amortisation still passes through the income statement, then declines as those acquired assets are amortised. New equipment, software and data vintages continue to generate recurring D&amp;A. The full cash-investment and vintage schedules stay in the model because they are audit support rather than a separate investment conclusion.</p>
+
+      </section>
+
+      <section class="article-section" id="working-capital-is-part-of-revenue-quality">
+        <h2>Working capital is part of revenue quality</h2>
+        <div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Working-capital evidence</th>
+<th align="right">Observed / assumed value</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FY2023–FY2024 DSO</td>
+<td align="right">About 85 days</td>
+<td>Normal pre-acquisition reference</td>
+</tr>
+<tr>
+<td>FY2025 DSO</td>
+<td align="right">90.2 days</td>
+<td>Year-end deterioration that should not be ignored</td>
+</tr>
+<tr>
+<td>Q2 FY2026 trailing-twelve-month DSO</td>
+<td align="right">About 76 days</td>
+<td>Improvement, but too short a period to extrapolate</td>
+</tr>
+<tr>
+<td>Base DSO / DPO</td>
+<td align="right">85 / 22 days</td>
+<td>Normalises both the FY2025 spike and latest interim improvement</td>
+</tr>
+<tr>
+<td>One-day DSO deterioration at FY2027 scale</td>
+<td align="right">$6.1m FCFF, or 3.5%</td>
+<td>Material but manageable</td>
+</tr>
+<tr>
+<td>Five-day DSO deterioration at FY2027 scale</td>
+<td align="right">$30.4m FCFF, or 17.7%</td>
+<td>Clear Bear-case signal</td>
+</tr>
+</tbody></table></div>
+<p>Zeta&#39;s customer concentration, agency relationships and sequential-liability clauses make receivables part of revenue quality rather than a mechanical cash-flow adjustment. The Base therefore forecasts each operating balance-sheet item and calculates investment as ending working capital less opening working capital. A move back toward 90 DSO could indicate collection, agency or campaign-quality problems and would materially reduce FCFF even if reported revenue remained intact.</p>
+
+      </section>
+
+      <section class="article-section" id="stock-compensation-and-m-and-a-share-issuance-are-one-capital-allocation-issue">
+        <h2>Stock compensation and M&amp;A share issuance are one capital-allocation issue</h2>
+        <div class="table-scroll"><table>
+<thead>
+<tr>
+<th>SBC sequence</th>
+<th align="right">FY2025A</th>
+<th align="right">FY2026E</th>
+<th align="right">FY2027E</th>
+<th align="right">FY2028E</th>
+<th align="right">FY2029E</th>
+<th align="right">FY2030E</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SBC expense ($m)</td>
+<td align="right">177.8</td>
+<td align="right">203.0</td>
+<td align="right">161.9</td>
+<td align="right">186.1</td>
+<td align="right">212.0</td>
+<td align="right">240.3</td>
+</tr>
+<tr>
+<td>SBC / revenue</td>
+<td align="right">13.6%</td>
+<td align="right">11.2%</td>
+<td align="right">7.3%</td>
+<td align="right">6.9%</td>
+<td align="right">6.6%</td>
+<td align="right">6.4%</td>
+</tr>
+</tbody></table></div>
+<p>The decline in SBC/revenue is an important part of per-share value, but the model does not obtain it by applying a revenue target. FY2026 starts with <strong>$105.1m of reported H1 expense</strong> and the filed <strong>$95.0m remaining schedule</strong>, plus a 3% allowance calibrated to five historical schedule updates. FY2027 combines the filed <strong>$116.9m existing-award schedule</strong> with $45.0m for later net award activity, close to the five-year historical median. From FY2028, SBC remains about <strong>15.5% of S&amp;M, R&amp;D and G&amp;A</strong>, Zeta&#39;s employee-intensive expense base. It therefore continues to rise in dollars as the organisation grows.</p>
+<p>The primary FCFF valuation retains SBC inside operating expense. This avoids treating employee equity as free simply because it is non-cash in the current period. The model uses <strong>257.4m valuation-date common-equity claims</strong>: 251.014m legal shares, 2.135m net dilution from vested exercisable options, 4.076m earned but unissued market-condition PSU shares and 0.189m earned but unissued legacy PSU shares. Unvested and unearned awards are not added wholesale because their future compensation cost remains in FCFF. At June 2026, the <strong>$381.4m unrecognised SBC balance</strong> and approximately <strong>15.7m shares issued to LiveIntent and Marigold sellers</strong> remain the practical warning: enterprise value must grow faster than both employee and acquisition-related claims. These disclosures are in the <a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526333902/zeta-20260630.htm" target="_blank" rel="noopener noreferrer">Q2 FY2026 Form 10-Q</a>.</p>
+
+      </section>
+
+      <section class="article-section" id="valuation-a-good-operating-outcome-can-still-produce-a-neutral-stock">
+        <h2>Valuation: a good operating outcome can still produce a neutral stock</h2>
+        <div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Base valuation input</th>
+<th align="right">Value</th>
+<th>Rationale and test</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>WACC</td>
+<td align="right">11.0%</td>
+<td>Rounded from 10.93%; one rate is used across scenarios so operating risk is not counted again in the discount rate</td>
+</tr>
+<tr>
+<td>Explicit Base forecast</td>
+<td align="right">FY2026–FY2030</td>
+<td>Links directly to the operating model above</td>
+</tr>
+<tr>
+<td>Transition</td>
+<td align="right">FY2031–FY2040</td>
+<td>Revenue growth declines from 16% to 4%; the longer linear path avoids forcing maturity immediately after an 18% FY2030 growth rate</td>
+</tr>
+<tr>
+<td>First terminal year</td>
+<td align="right">FY2041</td>
+<td>Applies 3% perpetual growth only after the transition</td>
+</tr>
+<tr>
+<td>Perpetual growth</td>
+<td align="right">3.0%</td>
+<td>Below long-run nominal U.S. growth references and does not require permanent market-share gains</td>
+</tr>
+<tr>
+<td>Terminal economic ROIC</td>
+<td align="right">25%</td>
+<td>Within the 22%–29% R&amp;D-adjusted sector range; used to test the reinvestment needed for 3% growth</td>
+</tr>
+<tr>
+<td>Normalised tax rate after NOL use</td>
+<td align="right">25%</td>
+<td>21% federal plus state, local and persistent tax-reconciliation items</td>
+</tr>
+<tr>
+<td>Valuation-date common-equity claims</td>
+<td align="right">257.4m</td>
+<td>Legal shares plus vested option dilution and earned but unissued PSUs</td>
+</tr>
+</tbody></table></div>
+<p>The 11.0% WACC is rounded from a market-input build shown in the model. The main judgement is the 1.50 equity beta: it sits above the relevant-sector range because Zeta has a shorter listed history, acquisition risk and unusually volatile shares, but below its noisy three-year observed estimate. Debt has little influence because it represents only 3.23% of the market-value capital mix.</p>
+<p>The terminal assumptions test, rather than repair, the operating forecast. A 25% economic ROIC implies the reinvestment needed to support 3% perpetual growth; it does not overwrite FCFF. Before maturity, the NOL schedule applies the pre-2018 and post-2017 legal limits to determine the transitional tax rate on EBIT. The Base&#39;s discounted terminal value is <strong>$3.70bn, or about 47% of its $7.83bn DCF enterprise value</strong>. The result is therefore sensitive to long-duration execution, but less dominated by terminal value than a short five-year DCF would be.</p>
+<h3>Sensitivity: valuation mechanics, operating execution and cash collection</h3>
+<p>The sensitivities answer three different questions and are therefore kept separate. The full WACC/perpetual-growth grid remains in the model; at the Base perpetual-growth rate, a 50bp WACC change moves value by roughly $2.4–$2.7 per share. That is duration and pricing risk. The operating grid below instead asks whether faster revenue growth creates margin, and the earlier DSO table isolates cash collection. Neither is an alternative scenario with its own probability.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>FY2030 forecast GAAP EBIT margin</th>
+<th align="right">S&amp;M cost ratio −4pp</th>
+<th align="right">−2pp</th>
+<th align="right">Base</th>
+<th align="right">+2pp</th>
+<th align="right">+4pp</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Revenue-growth path −4pp</td>
+<td align="right">14.2%</td>
+<td align="right">13.3%</td>
+<td align="right">12.4%</td>
+<td align="right">11.5%</td>
+<td align="right">10.6%</td>
+</tr>
+<tr>
+<td>Revenue-growth path −2pp</td>
+<td align="right">15.3%</td>
+<td align="right">14.3%</td>
+<td align="right">13.4%</td>
+<td align="right">12.4%</td>
+<td align="right">11.4%</td>
+</tr>
+<tr>
+<td><strong>Base revenue path</strong></td>
+<td align="right">16.5%</td>
+<td align="right">15.4%</td>
+<td align="right"><strong>14.4%</strong></td>
+<td align="right">13.4%</td>
+<td align="right">12.3%</td>
+</tr>
+<tr>
+<td>Revenue-growth path +2pp</td>
+<td align="right">17.7%</td>
+<td align="right">16.6%</td>
+<td align="right">15.5%</td>
+<td align="right">14.4%</td>
+<td align="right">13.3%</td>
+</tr>
+<tr>
+<td>Revenue-growth path +4pp</td>
+<td align="right">18.9%</td>
+<td align="right">17.8%</td>
+<td align="right">16.6%</td>
+<td align="right">15.5%</td>
+<td align="right">14.3%</td>
+</tr>
+</tbody></table></div>
+<p>The operating grid exposes the central interaction. A four-point revenue-growth shortfall can be largely offset if incremental S&amp;M cost improves by four points; equally, four points of extra growth create almost no FY2030 margin benefit if commercial cost deteriorates by the same amount. Revenue beats are therefore not sufficient evidence. They matter only if incremental gross profit and sales efficiency convert them into EBIT. Working capital is a different failure mode: moving DSO from 85 to 90 days leaves EBIT unchanged but reduces FY2027 FCFF by <strong>$30.4m, or 17.7%</strong>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th align="right">Probability</th>
+<th align="right">Current value / share</th>
+<th align="right">Twelve-month value / share</th>
+<th align="right">Upside / (downside) vs $29.07</th>
+<th align="right">WACC</th>
+<th align="right">Perpetual growth</th>
+<th align="right">First terminal year</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bull</td>
+<td align="right">20%</td>
+<td align="right">$49.58</td>
+<td align="right">$54.98</td>
+<td align="right">89.1%</td>
+<td align="right">11.0%</td>
+<td align="right">3.5%</td>
+<td align="right">FY2041</td>
+</tr>
+<tr>
+<td>Base</td>
+<td align="right">50%</td>
+<td align="right">$30.66</td>
+<td align="right">$33.98</td>
+<td align="right">16.9%</td>
+<td align="right">11.0%</td>
+<td align="right">3.0%</td>
+<td align="right">FY2041</td>
+</tr>
+<tr>
+<td>Bear</td>
+<td align="right">30%</td>
+<td align="right">$8.69</td>
+<td align="right">$9.61</td>
+<td align="right">(66.9%)</td>
+<td align="right">11.0%</td>
+<td align="right">2.5%</td>
+<td align="right">FY2037</td>
+</tr>
+<tr>
+<td>Probability-weighted target</td>
+<td align="right">100%</td>
+<td align="right">—</td>
+<td align="right">$30.87</td>
+<td align="right">6.2%</td>
+<td align="right">—</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+</tbody></table></div>
+<p>The twelve-month values are measured at <strong>21 August 2027</strong>. Pre-target FCFF is moved into target-date cash and only later cash flows are discounted from that date. A separate cost-of-equity roll-forward differs by only $0.14, $0.10 and $0.05 per share for Bull, Base and Bear, respectively.</p>
+<p>The scenario spread comes mainly from the duration and conversion of growth, not from changing WACC. Revenue, incremental gross margin, S&amp;M, G&amp;A and working capital move together within each case and compound over a long forecast. Bear receives more weight than Bull because weaker revenue would reduce gross-profit dollars before the sales organisation, central overhead and receivables fully adjust. The <strong>$30.87 probability-weighted value</strong>, rounded to a $31 target, therefore says that a favourable Base operating outcome is plausible but not sufficiently de-risked to warrant a Buy at $29.07.</p>
+
+      </section>
+
+      <section class="article-section" id="what-would-change-the-view">
         <h2>What would change the view</h2>
-        <h3>Potential catalysts</h3>
-        <ul>
-          <li>Q3 delivery against $470.5m revenue and $115.5m adjusted EBITDA guidance, with gross margin and direct mix as the real tests.</li>
-          <li>Zeta Live on 8 October 2026 and evidence of paying Athena or Palantir deployments.</li>
-          <li>Q4 ex-Marigold/political growth against the company's implied 20% path.</li>
-          <li>2027 guidance, Marigold retention and cross-sell, and an inflection in net share issuance.</li>
-        </ul>
-        <h3>Evidence that would make me positive</h3>
-        <ul>
-          <li>Ex-M&amp;A gross-profit growth above 22%, gross margin above 61% and direct mix above 73%.</li>
-          <li>SBC below 9% of revenue without slower growth or offsetting cash compensation.</li>
-          <li>SBC-adjusted FCF above a 7% margin earlier than 2028.</li>
-          <li>Repurchases exceeding all employee and acquisition issuance.</li>
-        </ul>
-        <h3>Thesis breakers</h3>
-        <ul>
-          <li>Q4 organic growth below 18%, two quarters below 58% gross margin, or widening gross-profit underperformance.</li>
-          <li>2027 SBC at or above 10% of revenue, or diluted shares rising without matching SBC-adjusted FCF growth.</li>
-          <li>Material Marigold customer losses, impairment indicators, or established legal/regulatory failure.</li>
-          <li>Another equity-funded acquisition before per-share returns on Marigold and LiveIntent are demonstrated.</li>
-        </ul>
+        <div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th>Positive interpretation</th>
+<th>Negative interpretation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Incremental GM less incremental S&amp;M</td>
+<td>Sustained recovery above the low-40% range</td>
+<td>Continued readings near the H1 FY2026 level of 37%</td>
+</tr>
+<tr>
+<td>Super-scaled count, ARPU and NRR</td>
+<td>Growth persists while retained-revenue economics improve</td>
+<td>KPIs rise mainly through lower-margin media without commercial-cost relief</td>
+</tr>
+<tr>
+<td>Marigold</td>
+<td>Retention holds while duplicative cost and infrastructure fall</td>
+<td>R&amp;D cuts precede product stability, or customer losses offset synergy</td>
+</tr>
+<tr>
+<td>Athena</td>
+<td>Paid adoption, measurable conversion or implementation savings</td>
+<td>Continued product narrative without quantified economics</td>
+</tr>
+<tr>
+<td>DSO</td>
+<td>Stable around 85 days with clean collections</td>
+<td>Movement toward 90 days or concentration-related delay</td>
+</tr>
+<tr>
+<td>SBC and share issuance</td>
+<td>FCFF per share grows faster than common-equity claims</td>
+<td>Compensation cost remains high without offsetting per-share FCFF improvement, or M&amp;A-related issuance outruns value creation</td>
+</tr>
+<tr>
+<td>M&amp;A</td>
+<td>Post-close GP, FCFF and return evidence exceeds the 11% cost of capital with a margin of safety</td>
+<td>Another equity-funded transaction before LiveIntent and Marigold returns are demonstrated</td>
+</tr>
+</tbody></table></div>
+
       </section>
 
-      <section class="article-section sources-section" id="sources">
-        <h2>Sources and related research</h2>
-        <ul class="source-list">
-          <li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000095017024021671/zeta-20231231.htm" target="_blank" rel="noopener noreferrer">Zeta 2023 Form 10-K, filed 28 February 2024</a></li>
-          <li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000095017025027338/zeta-20241231.htm" target="_blank" rel="noopener noreferrer">Zeta 2024 Form 10-K, filed 26 February 2025</a></li>
-          <li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526068598/zeta-20251231.htm" target="_blank" rel="noopener noreferrer">Zeta 2025 Form 10-K, filed 25 February 2026</a></li>
-          <li><a href="https://www.sec.gov/edgar/browse/?CIK=1851003&amp;owner=exclude" target="_blank" rel="noopener noreferrer">Zeta SEC filing history, including every 2024–Q2 2026 Form 10-Q</a></li>
-          <li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526333902/zeta-20260630.htm" target="_blank" rel="noopener noreferrer">Zeta Q2 2026 Form 10-Q, filed 5 August 2026</a></li>
-          <li><a href="https://s202.q4cdn.com/623583957/files/doc_financials/2026/q2/v2/2Q-26-Earnings-Supplemental_Final-1.pdf" target="_blank" rel="noopener noreferrer">Zeta Q2 2026 earnings supplemental, published 4 August 2026</a></li>
-          <li><a href="https://stockanalysis.com/stocks/zeta/history/" target="_blank" rel="noopener noreferrer">ZETA price history</a></li>
-          <li><a href="enterprise-marketing-data-platforms.html">Companion industry report: Enterprise Marketing Data and Activation Platforms</a></li>
-        </ul>
-        <div class="disclosure-box">
-          <p>
-            This is independent research for educational and portfolio purposes, not investment advice.
-            Facts, company guidance and analyst estimates are separated throughout. No broker consensus or
-            third-party target price is presented as my own work.
-          </p>
-        </div>
+      <section class="article-section" id="risks-to-this-analysis">
+        <h2>Risks to this analysis</h2>
+        <p>Several important disclosures remain incomplete. Zeta does not report post-close standalone gross profit, NOPAT or FCFF for LiveIntent or Marigold. Political-candidate revenue and broader political-and-advocacy revenue use different definitions, preventing a precise political-neutral historical series. Customer KPIs contain threshold migration and scope changes. Marigold carve-out costs include shared-service allocations and cannot be transferred directly into Zeta&#39;s post-close structure. Finally, contingent-consideration liability remeasurement and other discrete items make near-term GAAP EPS less useful than the operating and cash diagnostics discussed above.</p>
+<p>The analysis responds to these gaps through explicit analyst assumptions, scenario ranges and monitoring triggers. Missing disclosure is not treated as a reason to leave a necessary forecast entry blank, but neither is an unsupported estimate presented as a filed fact.</p>
+
       </section>
 
-      <a class="back-link" href="../index.html#stock-research">← Back to Stock Research</a>
+      <section class="article-section" id="sources-and-methodology">
+        <h2>Sources and methodology</h2>
+        <p>The evidence base is organised by analytical purpose. FY2025 and Q2 FY2026 are the current forecast anchors; they do not replace the earlier filings used to reconstruct the historical series.</p>
+<h3>Historical financial and operating record</h3>
+<ul>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312521189216/d379381d424b4.htm" target="_blank" rel="noopener noreferrer">Final IPO prospectus</a>, including audited FY2019–FY2020 statements and Q1 FY2021 comparatives</li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312522053214/d34083d10k.htm" target="_blank" rel="noopener noreferrer">FY2021 Form 10-K</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000095017023004243/zeta-20221231.htm" target="_blank" rel="noopener noreferrer">FY2022 Form 10-K</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000095017024021671/zeta-20231231.htm" target="_blank" rel="noopener noreferrer">FY2023 Form 10-K</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000095017025027338/zeta-20241231.htm" target="_blank" rel="noopener noreferrer">FY2024 Form 10-K</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526068598/zeta-20251231.htm" target="_blank" rel="noopener noreferrer">FY2025 Form 10-K</a></li>
+<li><a href="https://www.sec.gov/edgar/browse/?CIK=1851003&owner=exclude" target="_blank" rel="noopener noreferrer">SEC filing history</a>, covering the intervening Forms 10-Q used in the quarterly history</li>
+</ul>
+<h3>Current trading and forecast anchors</h3>
+<ul>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526199040/zeta-20260331.htm" target="_blank" rel="noopener noreferrer">Q1 FY2026 Form 10-Q</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526333902/zeta-20260630.htm" target="_blank" rel="noopener noreferrer">Q2 FY2026 Form 10-Q</a></li>
+<li><a href="https://s202.q4cdn.com/623583957/files/doc_financials/2026/q1/1Q-26-Earnings-Supplemental_Final.pdf" target="_blank" rel="noopener noreferrer">Q1 FY2026 earnings supplemental</a></li>
+<li><a href="https://s202.q4cdn.com/623583957/files/doc_financials/2026/q2/v2/2Q-26-Earnings-Supplemental_Final-1.pdf" target="_blank" rel="noopener noreferrer">Q2 FY2026 earnings supplemental</a></li>
+</ul>
+<h3>M&amp;A evidence</h3>
+<ul>
+<li>LiveIntent purchase accounting and subsequent contingent-consideration liability changes: FY2024 and FY2025 Forms 10-K and Q2 FY2026 Form 10-Q above</li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526041153/zeta-ex99_1.htm" target="_blank" rel="noopener noreferrer">Marigold Enterprise Business audited carve-out financial statements</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1851003/000119312526041153/zeta-ex99_3.htm" target="_blank" rel="noopener noreferrer">Marigold acquisition pro-forma financial information</a></li>
+<li><a href="https://investors.zetaglobal.com/events-and-presentations/presentations/presentation-details/2025/Investor-Day-2025-2025-xSj8cllhAi/default.aspx" target="_blank" rel="noopener noreferrer">Zeta Investor Day 2025</a>, including the OneZeta sales-efficiency and Marigold integration initiatives</li>
+</ul>
+<h3>Valuation inputs</h3>
+<ul>
+<li><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026" target="_blank" rel="noopener noreferrer">US Treasury daily yield-curve rates</a></li>
+<li><a href="https://www.newyorkfed.org/markets/reference-rates/sofr" target="_blank" rel="noopener noreferrer">Federal Reserve Bank of New York SOFR</a></li>
+<li><a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/implpr.html" target="_blank" rel="noopener noreferrer">Damodaran implied equity-risk premium</a>, <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.htm" target="_blank" rel="noopener noreferrer">industry beta data</a> and <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html" target="_blank" rel="noopener noreferrer">R&amp;D-adjusted return-on-capital data</a></li>
+<li><a href="https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260617.htm" target="_blank" rel="noopener noreferrer">Federal Reserve June 2026 Summary of Economic Projections</a> and <a href="https://www.cbo.gov/publication/61882" target="_blank" rel="noopener noreferrer">CBO 2026–2036 economic outlook</a>, used as long-run nominal-growth reference points rather than company forecasts</li>
+<li><a href="https://stockanalysis.com/stocks/zeta/history/" target="_blank" rel="noopener noreferrer">ZETA historical price record</a>, cross-checked against a second market-data source at the valuation date</li>
+</ul>
+<h3>Analyst calculations and model lineage</h3>
+<p>The historical fact book, forecast architecture, DCF and target-price workbooks are the numerical source of truth for analyst calculations. The reader-facing <a href="../assets/documents/ZETA-Global-Forecast-Valuation-Model.xlsx">publication model</a> links the historical record, forecast mechanics, sensitivities and valuation in one workbook. Forecasts, scenario probabilities, the LiveIntent purchase-cost/revenue diagnostic and the retained-revenue diagnostic are analyst calculations rather than company guidance.</p>
+<p>Historical figures are filed facts unless explicitly identified as management attribution or analyst calculation. Forecast sentences distinguish assumptions, formulas and model outputs: an assumption states what the analyst selected, a formula explains how linked entries are calculated, and an output reports the resulting forecast. All figures are in US dollars; totals may differ because of rounding.</p>
+<p><em>This report is for research and educational purposes and is not investment advice.</em></p>
+
+      </section>
+
+      <div class="disclosure-box">
+        <p>Independent research for educational purposes. Forecasts and valuation are estimates, not investment advice.</p>
+      </div>
     </article>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Jiefu Zhang</p>
+      <a href="../index.html">Back to home</a>
+    </div>
+  </footer>
 </body>
 </html>
