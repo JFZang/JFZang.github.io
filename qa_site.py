@@ -45,6 +45,16 @@ required_home_links = {
     "projects/china-baijiu-industry-primer.html",
 }
 
+required_home_anchors = {
+    "#stock-research",
+    "#industry-research",
+    "#macro",
+    "#market-notes",
+    "#glossary",
+    "#projects",
+    "#contact",
+}
+
 home_page = ROOT / "index.html"
 if home_page.exists():
     home_hrefs = {
@@ -55,6 +65,11 @@ if home_page.exists():
         required_page = ROOT / required_link
         if required_page.exists() and required_link not in home_hrefs:
             errors.append(f"index.html: published page is missing from home page: {required_link}")
+    for required_anchor in sorted(required_home_anchors):
+        if required_anchor not in parsed[home_page].hrefs:
+            errors.append(f"index.html: primary navigation entry is missing: {required_anchor}")
+        if required_anchor[1:] not in parsed[home_page].ids:
+            errors.append(f"index.html: primary section is missing: {required_anchor}")
 
 for page, parser in parsed.items():
     rel = page.relative_to(ROOT)
