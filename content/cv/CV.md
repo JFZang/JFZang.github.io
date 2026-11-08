@@ -1,6 +1,6 @@
 # Jeff Zhang
 
-jiefuzang@gmail.com | +44 7375 114239 | Oxford, United Kingdom | https://jfzang.github.io/
+jiefuzang@gmail.com | +44 7375 114239 | London, United Kingdom | https://jfzang.github.io/
 
 ## Education
 
@@ -58,7 +58,7 @@ jiefuzang@gmail.com | +44 7375 114239 | Oxford, United Kingdom | https://jfzang.
 
 ## Technical Skills & Additional Information
 
-- **Finance:** financial modelling, valuation (DCF, trading comparables, NAV), financial statement analysis, portfolio construction and risk analysis
-- **Tools:** Microsoft Excel, Python, Stata
-- **Qualifications:** CFA Level III Candidate (August 2026 examination completed, results pending)
+- **Finance:** portfolio construction, risk analysis, financial modelling, DCF/multiples/NAV valuation, financial statement analysis
+- **Tools:** Microsoft Excel, Python, Stata; AI workflow design and automation (ChatGPT, Codex)
+- **Qualifications:** CFA Programme (All Three Levels Passed)
 - **Interests:** piano (ABRSM Grade 8), drama (LAMDA Grade 5), karate (3rd brown belt)
